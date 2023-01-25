@@ -46,7 +46,7 @@
 
 ### 箱式图
 
-![boxplot](/Users/zhuozhiyongde/Desktop/ZZYDE/Study/PKU/G2S1/卫生统计学/Health-Statistics-2022-PKUHSC/课件&作业/作业1-定量资料的统计描述-正态分布/Homework1.assets/boxplot.svg)
+![boxplot](./Homework1.assets/boxplot.svg)
 
 ### 正态性检验
 
@@ -66,7 +66,7 @@ $$
 
 绘制直方图，得到
 
-![hist](/Users/zhuozhiyongde/Desktop/ZZYDE/Study/PKU/G2S1/卫生统计学/Health-Statistics-2022-PKUHSC/课件&作业/作业1-定量资料的统计描述-正态分布/Homework1.assets/hist.svg)
+![hist](./Homework1.assets/hist.svg)
 
 从而得到数据为正偏、右偏。
 

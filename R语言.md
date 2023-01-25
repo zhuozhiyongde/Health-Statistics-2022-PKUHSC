@@ -13,8 +13,6 @@ R文档查询：
 * [官方文档](https://stat.ethz.ch/R-manual/R-patched/library/base/html/00Index.html)，这个网站有点简陋，但是是最新的。包含全部内置包参数/函数说明。
 * [RDocumentation](https://www.rdocumentation.org/)，这个网站的内置搜索目前存在问题（[issues#128](https://github.com/datacamp/rdocumentation-2.0/issues/128)），建议通过谷歌关键词 `R {query} documentation` 从外部搜索。
 
-
-
 ## 相关软件配置
 
 ### R in VS Code
@@ -27,19 +25,19 @@ R文档查询：
 
 Before：
 
-![CleanShot 2023-01-21 at 20.44.21](./R语言.assets/CleanShot 2023-01-21 at 20.44.21.png)
+![CleanShot 2023-01-21 at 20.44.21](./R-language.assets/CleanShot 2023-01-21 at 20.44.21.png)
 
 After：
 
-![CleanShot 2023-01-21 at 20.49.40](./R语言.assets/CleanShot 2023-01-21 at 20.49.40.png)
+![CleanShot 2023-01-21 at 20.49.40](./R-language.assets/CleanShot 2023-01-21 at 20.49.40.png)
 
 以及最爽的 AI 提示：
 
-![CleanShot 2023-01-21 at 20.51.20](./R语言.assets/CleanShot 2023-01-21 at 20.51.20.png)
+![CleanShot 2023-01-21 at 20.51.20](./R-language.assets/CleanShot 2023-01-21 at 20.51.20.png)
 
 #### 配置方法
 
-参见官方指引：[R in Visual Studio Code](https://code.visualstudio.com/docs/languages/r) 
+参见官方指引：[R in Visual Studio Code](https://code.visualstudio.com/docs/languages/r)
 
 相关扩展列举：
 
@@ -60,8 +58,6 @@ After：
 ### 配置LaTeX OCR识别
 
 参见[Mathpix](https://mathpix.com/)，使用edu邮箱注册可获得100次/月的免费额度。
-
-
 
 ## R语言基础操作
 
@@ -93,15 +89,15 @@ R的程序包安装网络叫CRAN。可以理解为R的pip/npm。
 
 `cmd+enter`：逐行执行（最常见）
 
-![iShot_2023-01-25_13.22.53](/Users/zhuozhiyongde/Desktop/ZZYDE/Study/PKU/G2S1/卫生统计学/Health-Statistics-2022-PKUHSC/R语言.assets/iShot_2023-01-25_13.22.53.gif)
+![iShot_2023-01-25_13.22.53](./R-language.assets/iShot_2023-01-25_13.22.53.gif)
 
 `选中，然后cmd+enter`：多行一起执行
 
-![iShot_2023-01-25_13.24.45](/Users/zhuozhiyongde/Desktop/ZZYDE/Study/PKU/G2S1/卫生统计学/Health-Statistics-2022-PKUHSC/R语言.assets/iShot_2023-01-25_13.24.45.gif)
+![iShot_2023-01-25_13.24.45](./R-language.assets/iShot_2023-01-25_13.24.45.gif)
 
 `cmd+r`：直接运行整个脚本（需要安装Code Runner，告诉VS Code如何编译R脚本，或者自行配置keyboard shortcuts）
 
-![iShot_2023-01-25_13.28.04](/Users/zhuozhiyongde/Desktop/ZZYDE/Study/PKU/G2S1/卫生统计学/Health-Statistics-2022-PKUHSC/R语言.assets/iShot_2023-01-25_13.28.04.gif)
+![iShot_2023-01-25_13.28.04](./R-language.assets/iShot_2023-01-25_13.28.04.gif)
 
 ## R语言基本语法
 
@@ -166,7 +162,7 @@ x <- factor(
 
 除此之外，你也可以参见 [R因子-菜鸟教程](https://www.runoob.com/r/r-factor.html) 或者R文档说明。
 
-![CleanShot 2023-01-25 at 13.48.18](/Users/zhuozhiyongde/Desktop/ZZYDE/Study/PKU/G2S1/卫生统计学/Health-Statistics-2022-PKUHSC/R语言.assets/CleanShot 2023-01-25 at 13.48.18.png)
+![CleanShot 2023-01-25 at 13.48.18](./R-language.assets/CleanShot 2023-01-25 at 13.48.18.png)
 
 ### 特殊变量
 
@@ -362,7 +358,7 @@ x[["a"]] # 1 2 3 4 5
 
 `min()`：最小值
 
-`range(x)`：与`c(min(x)，max(x))`作用相同
+`range(x)`：与 `c(min(x)，max(x))`作用相同
 
 `which.max()`：最大数的下标
 
@@ -386,9 +382,9 @@ x[["a"]] # 1 2 3 4 5
 
 `order(x)`：返回使得x升序或降序排序的下标向量
 
-> `x[order(x)]`等效于`sort(x)` 
+> `x[order(x)]`等效于 `sort(x)`
 >
-> 如需降序，请在函数`sort`和`order`中，传递参数`decreasing=TRUE`
+> 如需降序，请在函数 `sort`和 `order`中，传递参数 `decreasing=TRUE`
 
 `rev(x)`：向量x的元素取逆序得到一个新的向量（reverse）
 
@@ -441,7 +437,7 @@ t(x) # 等价于x'，即行列互换
 
 以下就是常见的csv形式，你可以借此理解数据框的储存形式：
 
-![CleanShot 2023-01-25 at 14.43.43](/Users/zhuozhiyongde/Desktop/ZZYDE/Study/PKU/G2S1/卫生统计学/Health-Statistics-2022-PKUHSC/R语言.assets/CleanShot 2023-01-25 at 14.43.43.png)
+![CleanShot 2023-01-25 at 14.43.43](./R-language.assets/CleanShot 2023-01-25 at 14.43.43.png)
 
 #### 创建数据框
 
@@ -477,12 +473,12 @@ x <- data.frame(
     row.names = c("a", "b", "c", "d", "e")
 )
 summary(x)
-#        a           b           c            
-#  Min.   :1   Min.   : 6   Length:5          
+#        a           b           c          
+#  Min.   :1   Min.   : 6   Length:5        
 #  1st Qu.:2   1st Qu.: 7   Class :character  
 #  Median :3   Median : 8   Mode  :character  
-#  Mean   :3   Mean   : 8                     
-#  3rd Qu.:4   3rd Qu.: 9                     
+#  Mean   :3   Mean   : 8                   
+#  3rd Qu.:4   3rd Qu.: 9                   
 #  Max.   :5   Max.   :10
 ```
 
@@ -494,13 +490,13 @@ summary(x)
 
 `nrow(x)`：获得数据框的行数
 
-`ncol(x)`或`length(x)`：获得数据框的列数
+`ncol(x)`或 `length(x)`：获得数据框的列数
 
 `dim(x)`：获得数据框的行数和列数
 
-`colnames(x)`或`names (x)`：管理列的名字
+`colnames(x)`或 `names (x)`：管理列的名字
 
-`row.names(x)`或`rownames(x)`：管理行的名字
+`row.names(x)`或 `rownames(x)`：管理行的名字
 
 #### 数据框的索引（重要）
 
@@ -596,7 +592,7 @@ R语言的编程思想是基于函数的，函数是R语言的基本构建块，
 
 顺序语句是R语言中最基本的语句，顺序语句是指按照顺序执行的语句，顺序语句之间用分号分隔。
 
-顺序语句的执行顺序是从上到下，从左到右，执行结果是最后一个语句的执行结果，这也是为什么当你使用`cmd+r`执行一整个脚本时，其中的输出都不会显示，也不会执行中间的绘制图表操作，只会返回最后一句代码的返回结果。
+顺序语句的执行顺序是从上到下，从左到右，执行结果是最后一个语句的执行结果，这也是为什么当你使用 `cmd+r`执行一整个脚本时，其中的输出都不会显示，也不会执行中间的绘制图表操作，只会返回最后一句代码的返回结果。
 
 顺序语句的执行结果可以被赋值给变量、传递给函数、传递给其他语句。
 
@@ -758,7 +754,7 @@ add(1, 2)
 
 ### 散点图plot
 
-![plot1](/Users/zhuozhiyongde/Desktop/ZZYDE/Study/PKU/G2S1/卫生统计学/Health-Statistics-2022-PKUHSC/R语言.assets/plot.svg)
+![plot1](./R-language.assets/plot.svg)
 
 ```R
 # 图表绘制
@@ -790,7 +786,7 @@ plot(
 
 ### 条形图barplot
 
-![barplot](/Users/zhuozhiyongde/Desktop/ZZYDE/Study/PKU/G2S1/卫生统计学/Health-Statistics-2022-PKUHSC/R语言.assets/barplot.svg)
+![barplot](./R-language.assets/barplot.svg)
 
 ```R
 # barplot，绘制条形图
@@ -816,12 +812,12 @@ barplot(
 barplot的数据只传入第一个height参数，其类型如下：
 
 * 向量，此时每个元素绘制一个柱形。
-* 矩阵，且`beside=FALSE`，此时每列数据绘制一个堆积的矩形。
-* 矩阵，且`beside=TRUE`，此时每列数据绘制多个并列的矩形。
+* 矩阵，且 `beside=FALSE`，此时每列数据绘制一个堆积的矩形。
+* 矩阵，且 `beside=TRUE`，此时每列数据绘制多个并列的矩形。
 
 `beside=TRUE`：
 
-![barplot-beside-true](/Users/zhuozhiyongde/Desktop/ZZYDE/Study/PKU/G2S1/卫生统计学/Health-Statistics-2022-PKUHSC/R语言.assets/barplot-beside-true.svg)
+![barplot-beside-true](./R-language.assets/barplot-beside-true.svg)
 
 ```R
 # 输入矩阵时，beside参数
@@ -836,7 +832,7 @@ barplot(
 
 `beside=FALSE`:
 
-![barplot-beside-false](/Users/zhuozhiyongde/Desktop/ZZYDE/Study/PKU/G2S1/卫生统计学/Health-Statistics-2022-PKUHSC/R语言.assets/barplot-beside-false.svg)
+![barplot-beside-false](./R-language.assets/barplot-beside-false.svg)
 
 ```R
 # 输入矩阵时，beside参数
@@ -855,7 +851,7 @@ barplot(
 
 ### 直方图hist
 
-![hist](/Users/zhuozhiyongde/Desktop/ZZYDE/Study/PKU/G2S1/卫生统计学/Health-Statistics-2022-PKUHSC/R语言.assets/hist.svg)
+![hist](./R-language.assets/hist.svg)
 
 绘制过程：将大量的数据以间断点形式分割，统计每个区间内的数量，然后绘制条形图。
 
@@ -889,9 +885,9 @@ breaks参数一般以一下两种形式给出：
 
 它可反映出一组数据中的最大值、最小值、中位数、上下四分位数，还可以通过绘制每组数据集的箱线图来比较多组数据之间的数据分布。
 
-![CleanShot 2023-01-25 at 16.31.21](/Users/zhuozhiyongde/Desktop/ZZYDE/Study/PKU/G2S1/卫生统计学/Health-Statistics-2022-PKUHSC/R语言.assets/CleanShot 2023-01-25 at 16.31.21-4635492.png)
+![CleanShot 2023-01-25 at 16.31.21](./R-language.assets/CleanShot 2023-01-25 at 16.31.21-4635492.png)
 
-![boxplot](/Users/zhuozhiyongde/Desktop/ZZYDE/Study/PKU/G2S1/卫生统计学/Health-Statistics-2022-PKUHSC/R语言.assets/boxplot.svg)
+![boxplot](./R-language.assets/boxplot.svg)
 
 ```R
 # boxplot，绘制箱线图
@@ -912,9 +908,9 @@ boxplot(
 
 ### 线lines / 点points
 
-在散点图、柱状图中可以使用`lines()`函数来在已有图像中绘制新的线。
+在散点图、柱状图中可以使用 `lines()`函数来在已有图像中绘制新的线。
 
-![lines-and-points](/Users/zhuozhiyongde/Desktop/ZZYDE/Study/PKU/G2S1/卫生统计学/Health-Statistics-2022-PKUHSC/R语言.assets/lines-and-points.svg)
+![lines-and-points](./R-language.assets/lines-and-points.svg)
 
 ```R
 # lines and points
@@ -976,7 +972,7 @@ data$score # 查看score列数据
 
 ## 统计学函数
 
-此处为实际上机授课重点，建议根据老师课件搭配谷歌/百度/CSDN自学，因为实际上听老师/助教授课的体验较为糟糕。我将在下面列举出一些常用的知识点，具体怎么看、怎么分析数据请搭配`统计学知识.md`和作业、课件、教材一起学习。
+此处为实际上机授课重点，建议根据老师课件搭配谷歌/百度/CSDN自学，因为实际上听老师/助教授课的体验较为糟糕。我将在下面列举出一些常用的知识点，具体怎么看、怎么分析数据请搭配 `统计学知识.md`和作业、课件、教材一起学习。
 
 ### d、p、q、r函数前缀
 
@@ -991,37 +987,31 @@ rbinom(n, size, prob)
 
 请记住以下概念：**d、p、q、r分别表示概率密度函数、概率累积分布函数、分位数函数、随机数生成函数**
 
-
-
 #### d前缀：概率密度函数，probability density function
 
 此前缀主要用以获得分布在某一特定点的概率或者概率密度，如下例：
 
-![dbinom](/Users/zhuozhiyongde/Desktop/ZZYDE/Study/PKU/G2S1/卫生统计学/Health-Statistics-2022-PKUHSC/R语言.assets/dbinom.svg)
+![dbinom](./R-language.assets/dbinom.svg)
 
 ```R
 plot(0:10, dbinom(0:10, 10, 0.5), type = "h", col = "#8C0000", main="概率密度函数")
 ```
 
-
-
 #### p前缀：概率累积分布函数，probability cumulative distribution function
 
 实际上是d函数的积分。某一点的值是“所有分布小于此点的值的概率总和”
 
-![pbinom](/Users/zhuozhiyongde/Desktop/ZZYDE/Study/PKU/G2S1/卫生统计学/Health-Statistics-2022-PKUHSC/R语言.assets/pbinom.svg)
+![pbinom](./R-language.assets/pbinom.svg)
 
 ```R
 plot(0:10, pbinom(0:10, 10, 0.5), type = "h", col = "#8C0000", main="概率累积分布函数")
 ```
 
-
-
 #### q前缀：分位数函数，quantile function
 
 是p函数的反函数，通过累积概率值反求分位点。
 
-![qbinom](/Users/zhuozhiyongde/Desktop/ZZYDE/Study/PKU/G2S1/卫生统计学/Health-Statistics-2022-PKUHSC/R语言.assets/qbinom.svg)
+![qbinom](./R-language.assets/qbinom.svg)
 
 ```R
 plot(seq(0, 1, length = 100), qbinom(seq(0, 1, length = 100), 10, 0.5), type = "h", col = "#8C0000", main = "分位数函数")
@@ -1031,7 +1021,7 @@ plot(seq(0, 1, length = 100), qbinom(seq(0, 1, length = 100), 10, 0.5), type = "
 
 用于生成一组符合指定分布的数。
 
-![rbinom](/Users/zhuozhiyongde/Desktop/ZZYDE/Study/PKU/G2S1/卫生统计学/Health-Statistics-2022-PKUHSC/R语言.assets/rbinom.svg)
+![rbinom](./R-language.assets/rbinom.svg)
 
 ```R
 x <- rbinom(100, 10, 0.5) # 二项分布随机数生成函数
@@ -1039,4 +1029,3 @@ plot(1:100, sort(x),col="#8C0000", main = "随机数生成函数")
 ```
 
 可以看到，当数据总量n足够大时，将随机数函数排序后，分布十分接近于分位数函数。这也是随机生成的数符合指定分布的证据之一。
-

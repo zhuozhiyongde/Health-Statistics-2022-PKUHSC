@@ -53,7 +53,7 @@ chisq.test(data)
 
 ### 第二问
 
-![CleanShot 2022-11-28 at 02.42.00](/Users/zhuozhiyongde/Desktop/ZZYDE/Study/PKU/G2S1/卫生统计学/Homework8/Homework8.assets/CleanShot 2022-11-28 at 02.42.00.png)
+![CleanShot 2022-11-28 at 02.42.00](./Homework8.assets/CleanShot 2022-11-28 at 02.42.00.png)
 
 从而建立检验假设和检验水准：
 $$
