@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="httpgd" width="1037.00" height="800.00" viewBox="0 0 829.60 640.00">
+<defs>
+  <style type='text/css'><![CDATA[
+    .httpgd line, .httpgd polyline, .httpgd polygon, .httpgd path, .httpgd rect, .httpgd circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+  ]]></style>
+<clipPath id="c0"><rect x="0.00" y="0.00" width="829.60" height="640.00"/></clipPath>
+<clipPath id="c1"><rect x="59.04" y="59.04" width="740.32" height="507.52"/></clipPath>
+<clipPath id="c2"><rect x="0.00" y="0.00" width="829.60" height="640.00"/></clipPath>
+</defs>
+<rect width="100%" height="100%" style="stroke: none;fill: #FFFFFF;"/>
+<g clip-path="url(#c0)">
+</g><g clip-path="url(#c1)">
+<polygon points="292.10,326.38 566.30,326.38 566.30,227.91 292.10,227.91" style="stroke-width: 0.75;stroke: none;fill: #8C0000;" />
+<line x1="292.10" y1="277.36" x2="566.30" y2="277.36" style="stroke-width: 2.25;stroke-linecap: butt;"/>
+<line x1="429.20" y1="468.79" x2="429.20" y2="326.38" style="stroke-width: 0.75; stroke-dasharray: 4.00, 4.00;"/>
+<line x1="429.20" y1="80.66" x2="429.20" y2="227.91" style="stroke-width: 0.75; stroke-dasharray: 4.00, 4.00;"/>
+<line x1="360.65" y1="468.79" x2="497.75" y2="468.79" style="stroke-width: 0.75;"/>
+<line x1="360.65" y1="80.66" x2="497.75" y2="80.66" style="stroke-width: 0.75;"/>
+<polygon points="292.10,326.38 566.30,326.38 566.30,227.91 292.10,227.91" style="stroke-width: 0.75;" />
+<circle cx="429.20" cy="477.12" r="2.70" style="stroke-width: 0.75;"/>
+<circle cx="429.20" cy="478.88" r="2.70" style="stroke-width: 0.75;"/>
+<circle cx="429.20" cy="493.65" r="2.70" style="stroke-width: 0.75;"/>
+<circle cx="429.20" cy="547.76" r="2.70" style="stroke-width: 0.75;"/>
+<circle cx="429.20" cy="77.84" r="2.70" style="stroke-width: 0.75;"/>
+<circle cx="429.20" cy="479.51" r="2.70" style="stroke-width: 0.75;"/>
+<circle cx="429.20" cy="484.92" r="2.70" style="stroke-width: 0.75;"/>
+<circle cx="429.20" cy="491.14" r="2.70" style="stroke-width: 0.75;"/>
+<circle cx="429.20" cy="476.21" r="2.70" style="stroke-width: 0.75;"/>
+<circle cx="429.20" cy="501.69" r="2.70" style="stroke-width: 0.75;"/>
+</g><g clip-path="url(#c2)">
+<line x1="59.04" y1="495.41" x2="59.04" y2="62.10" style="stroke-width: 0.75;"/>
+<line x1="59.04" y1="495.41" x2="51.84" y2="495.41" style="stroke-width: 0.75;"/>
+<line x1="59.04" y1="423.19" x2="51.84" y2="423.19" style="stroke-width: 0.75;"/>
+<line x1="59.04" y1="350.97" x2="51.84" y2="350.97" style="stroke-width: 0.75;"/>
+<line x1="59.04" y1="278.75" x2="51.84" y2="278.75" style="stroke-width: 0.75;"/>
+<line x1="59.04" y1="206.54" x2="51.84" y2="206.54" style="stroke-width: 0.75;"/>
+<line x1="59.04" y1="134.32" x2="51.84" y2="134.32" style="stroke-width: 0.75;"/>
+<line x1="59.04" y1="62.10" x2="51.84" y2="62.10" style="stroke-width: 0.75;"/>
+<g><text transform="translate(41.76,495.41) rotate(-90.00)" text-anchor="middle" style="font-family: Arial;font-size: 12.00px;" textLength="10.67px" lengthAdjust="spacingAndGlyphs">-3</text></g>
+<g><text transform="translate(41.76,423.19) rotate(-90.00)" text-anchor="middle" style="font-family: Arial;font-size: 12.00px;" textLength="10.67px" lengthAdjust="spacingAndGlyphs">-2</text></g>
+<g><text transform="translate(41.76,350.97) rotate(-90.00)" text-anchor="middle" style="font-family: Arial;font-size: 12.00px;" textLength="10.67px" lengthAdjust="spacingAndGlyphs">-1</text></g>
+<g><text transform="translate(41.76,278.75) rotate(-90.00)" text-anchor="middle" style="font-family: Arial;font-size: 12.00px;" textLength="6.67px" lengthAdjust="spacingAndGlyphs">0</text></g>
+<g><text transform="translate(41.76,206.54) rotate(-90.00)" text-anchor="middle" style="font-family: Arial;font-size: 12.00px;" textLength="6.67px" lengthAdjust="spacingAndGlyphs">1</text></g>
+<g><text transform="translate(41.76,134.32) rotate(-90.00)" text-anchor="middle" style="font-family: Arial;font-size: 12.00px;" textLength="6.67px" lengthAdjust="spacingAndGlyphs">2</text></g>
+<g><text transform="translate(41.76,62.10) rotate(-90.00)" text-anchor="middle" style="font-family: Arial;font-size: 12.00px;" textLength="6.67px" lengthAdjust="spacingAndGlyphs">3</text></g>
+<g><text x="429.20" y="34.70" text-anchor="middle" style="font-family: Arial;font-size: 14.40px;font-weight: bold;" textLength="31.19px" lengthAdjust="spacingAndGlyphs">箱线图</text></g>
+<g><text x="429.20" y="621.28" text-anchor="middle" style="font-family: Arial;font-size: 12.00px;" textLength="6.00px" lengthAdjust="spacingAndGlyphs">x</text></g>
+<g><text transform="translate(12.96,312.80) rotate(-90.00)" text-anchor="middle" style="font-family: Arial;font-size: 12.00px;" textLength="6.00px" lengthAdjust="spacingAndGlyphs">y</text></g>
+<polygon points="59.04,566.56 799.36,566.56 799.36,59.04 59.04,59.04" style="stroke-width: 0.75;" />
+</g>
+</svg>

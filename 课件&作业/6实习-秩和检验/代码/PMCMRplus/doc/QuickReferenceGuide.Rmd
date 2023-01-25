@@ -1,0 +1,114 @@
+---
+title: "PMCMR Quick Reference Guide"
+author: "Thorsten Pohlert"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteIndexEntry{PMCMR Quick Reference Guide}
+  %\VignetteEncoding{UTF-8}
+---
+
+## Introduction
+
+In PMCMRplus function names have changed 
+from `period.separated` in PMCMR (<= 4.1) to `lowerCamelCase`.
+
+## One factorial layout
+
+### Omnibus tests
+
+FN in PMCMRplus   | PMCMR v4.1       | Meaning
+------------------|------------------|-------------------------------------
+`kruskalTest`     |    --            | Kruskal-Wallis test
+`vanWaerdenTest`  | `vanWaerden.Test`| van der Waerden's normal scores test
+`adKSampleTest`   |    --            | Anderson-Darling k-Sample Test
+`bwsKSampleTest`  |    --            | Murakami k-Sample BWS normal Test
+`normalScoresTest`|    --            | Lu-Smith Normal Score Test
+
+
+
+### Many-to-One comparisons
+
+FN in PMCMRplus    | PMCMR v4.1         | Meaning
+--------------------|--------------------|---------------------------------------------------------
+`dunnettTest`       |    --              | Dunnett's test for multiple comparisons with one control
+`ManyOneUTest`         |    --              | Multiple comparisons with one control (multiple U-test)
+`kwManyOneConoverTest` | -- | Pairwise Test for Multiple Comparisons of Mean Rank Sums with one control (Conover's-Test)
+`kwManyOneDunnTest` |`dunn.test.control` | Pairwise Test for Multiple Comparisons of Mean Rank Sums with one control (Dunn's-Test)
+`kwManyOneNdwTest`  |    --              | Pairwise Test for Multiple Comparisons of Mean Rank Sums with one control  (Nemenyi-Damico-Wolfe Test)
+`tamhaneDunnettTest`|    --              | Tamhane-Dunnett's test for multiple comparisons with one control
+`vanWaerdenManyOneTest`|    --              | Multiple Comparisons of normal scores (van der Waerden test)
+`adManyOneTest` | -- | Anderson-Darling Many-To-One Comparison Test
+`bwsManyOneTest` | -- | BWS Many-To-One Comparison Test
+
+
+### Trend tests
+FN in PMCMRplus    | PMCMR v4.1         | Meaning
+--------------------|--------------------|---------------------------------------------------------
+`cuzickTest` | -- | Cuzick test for testing independent samples against ordered alternatives
+`johnsonTest` | -- | Johnson-Mehrotra test for testing independent samples against ordered alternatives
+`jonckheereTest` | `jonckheere.test` | Jonckheere-Terpstra test for testing k independent samples against ordered alternatives
+`leTest` | -- | Le's test for testing k independent samples against ordered alternatives
+`spearmanTest` | -- | Spearman test for testing k independent samples against ordered alternatives
+`bwsTrendTest` | -- | Murakami's BWS Trend Test
+`chackoTest` | -- | Chacko's Test
+
+
+### All-pairs comparisons
+
+FN in PMCMRplus        | PMCMR v4.1                   | Meaning
+------------------------|------------------------------|---------------------------------------------------------
+`dscfAllPairsTest`          |    --                        | Multiple Comparisons after Dwass, Steele, Critchlow and Fligner
+`dunnettT3Test`         |    --                        | Dunnett's T3 test for multiple comparisons with unequal variances
+`gamesHowellTest`       |    --                        | Games-Howel test for multiple comparisons with unequal variances
+`kwAllPairsConoverTest`     |`posthoc.kruskal.conover.test`| Multiple Comparisons of Mean Rank Sums (Conover's-Test)
+`kwAllPairsDunnTest`        |`posthoc.kruskal.dunn.test`   | Pairwise Test for Multiple Comparisons of Mean Rank Sums (Dunn's-Test)
+`kwAllPairsNemenyiTest`     |`posthoc.kruskal.nemenyi.test`| Pairwise Test for Multiple Comparisons of Mean Rank Sums (Nemenyi-Tests)
+`lsdTest`               |    --                        | Least significant difference test for multiple comparisons
+`scheffeTest`           |    --                        | Scheffe's test for multiple comparisons
+`tamhaneT2Test`         |    --                        | Tamhane's T2 test for multiple comparisons with unequal variances 
+`tukeyTest`             |    --                        | Tukey's test for multiple comparisons
+`uryWigginsHochbergTest`|    --                        | Ury, Wiggins, Hochberg test for multiple comparisons with unequal variances
+`vanWaerdenAllPairsTest`    |`posthoc.vanWaerden.test`     | Multiple Comparisons of normal scores (van der Waerden test)
+`adAllPairsTest` | -- | Anderson-Darling All-Pairs Comparison Test
+`bwsAllPairsTest` | -- | BWS All-Pairs Comparison Test
+
+
+## Two factorial layout
+
+### Omnibus tests
+
+FN in PMCMRplus | PMCMR v4.1       | Meaning
+-----------------|------------------|-------------------------------------
+`durbinTest`    | `durbin.test`    | Durbin's test for two-way balanced incomplete block design
+`friedmanTest` | -- | Friedman Test
+`skillingsMackTest` | -- | Skillings-Mack Test
+`GoreTest` | -- | Gore Test
+
+### Many-to-One comparisons
+
+FN in PMCMRplus    | PMCMR v4.1         | Meaning
+--------------------|-------|---------------------------------
+`frdManyOneDemsarTest` | -- | Multiple Comparisons of Mean Rank Sums with a Control for Unreplicated Blocked Data (Demsar-Test)
+`frdManyOneExactTest` |--| Multiple Comparisons of Mean Rank Sums with a control for Unreplicated Blocked Data (Exact-Test)
+`frdManyOneNemenyiTest` | -- | Multiple Comparisons of Mean Rank Sums with a Control for Unreplicated Blocked Data (Nemenyi-Test)
+
+### Trend test
+
+FN in PMCMRplus    | PMCMR v4.1  | Meaning
+--------------------|-------|--------------------------------
+`pageTest` | -- | Page Rank Sum Test
+
+
+### All-pairs comparisons
+
+FN in PMCMRplus        | PMCMR v4.1                   | Meaning
+------------------------|------------------------------|----------------------
+`durbinAllPairsTest` | `posthoc.durbin.test` | Multiple Comparisons of Mean Rank Sums (Durbin's test)
+`frdAllPairsConoverTest` | `posthoc.friedman.conover.test` | Multiple Comparisons of Rank Sums for Unreplicated Blocked Data (Conover-Test)
+`frdAllPairsExactTest` | -- | Multiple Comparisons of Mean Rank Sums for Unreplicated Blocked Data (Exact-Test)
+`frdAllPairsMillerTest` | -- | Multiple Comparisons of Mean Rank Sums for Unreplicated Blocked Data (Miller-Test)
+`frdAllPairsNemenyiTest` | `posthoc.friedman.nemenyi.test` | Multiple Comparisons of Mean Rank Sums for Unreplicated Blocked Data (Nemenyi-Test)
+`frdAllPairsSiegelTest` | -- | Multiple Comparisons of Mean Rank Sums for Unreplicated Blocked Data (Siegel-Test)
+`quadeAllPairsTest` | `posthoc.quade.test` | Multiple Comparisons of Rank Sums for Unreplicated Blocked Data (Quade multiple comparison test)

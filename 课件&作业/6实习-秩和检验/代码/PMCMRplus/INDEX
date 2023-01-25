@@ -1,0 +1,158 @@
+Cochran                 Cochran's distribution
+Dgrubbs                 Grubbs D* distribution
+GSTTest                 Generalized Siegel-Tukey Test of Homogeneity of
+                        Scales
+Grubbs                  Grubbs distribution
+MTest                   Extended One-Sided Studentised Range Test
+Mandel-h                Mandel's h Distribution
+Mandel-k                Mandel's k Distribution
+NPMTest                 All-Pairs Comparisons for Simply Ordered Mean
+                        Ranksums
+Pentosan                Pentosan Dataset
+adAllPairsTest          Anderson-Darling All-Pairs Comparison Test
+adKSampleTest           Anderson-Darling k-Sample Test
+adManyOneTest           Anderson-Darling Many-To-One Comparison Test
+algae                   Algae Growth Inhibition Data Set
+barPlot                 Plotting PMCMR Objects
+bwsAllPairsTest         BWS All-Pairs Comparison Test
+bwsKSampleTest          Murakami's k-Sample BWS Test
+bwsManyOneTest          BWS Many-To-One Comparison Test
+bwsTrendTest            Testing against Ordered Alternatives
+                        (Murakami's BWS Trend Test)
+chaAllPairsNashimotoTest
+                        All-Pairs Comparisons for Simply Ordered Mean
+                        Ranksums
+chackoTest              Testing against Ordered Alternatives (Chacko's
+                        Test)
+chenJanTest             Chen and Jan Many-to-One Comparisons Test
+chenTest                Chen's Many-to-One Comparisons Test
+cochranTest             Cochran Test
+cuzickTest              Testing against Ordered Alternatives (Cuzick's
+                        Test)
+doubleGrubbsTest        Grubbs Double Outlier Test
+dscfAllPairsTest        Multiple Comparisons of Mean Rank Sums
+duncanTest              Duncan's Multiple Range Test
+dunnettT3Test           Dunnett's T3 Test
+dunnettTest             Dunnett's Many-to-One Comparisons Test
+durbinAllPairsTest      All-Pairs Comparisons Test for Balanced
+                        Incomplete Block Designs
+durbinTest              Durbin Test
+flignerWolfeTest        Testing Several Treatments With One Control
+frdAllPairsConoverTest
+                        Conover's All-Pairs Comparisons Test for
+                        Unreplicated Blocked Data
+frdAllPairsExactTest    Exact All-Pairs Comparisons Test for
+                        Unreplicated Blocked Data
+frdAllPairsMillerTest   Millers's All-Pairs Comparisons Test for
+                        Unreplicated Blocked Data
+frdAllPairsNemenyiTest
+                        Nemenyi's All-Pairs Comparisons Test for
+                        Unreplicated Blocked Data
+frdAllPairsSiegelTest   Siegel and Castellan's All-Pairs Comparisons
+                        Test for Unreplicated Blocked Data
+frdHouseTest            House Test
+frdManyOneDemsarTest    Demsar's Many-to-One Test for Unreplicated
+                        Blocked Data
+frdManyOneExactTest     Exact Many-to-One Test for Unreplicated Blocked
+                        Data
+frdManyOneNemenyiTest   Nemenyi's Many-to-One Test for Unreplicated
+                        Blocked Data
+friedmanTest            Friedman Rank Sum Test
+gamesHowellTest         Games-Howell Test
+gesdTest                Generalized Extreme Studentized Deviate
+                        Many-Outlier Test
+goreTest                Gore Test
+grubbsTest              Grubbs Outlier Test
+hartleyTest             Hartley's Maximum F-Ratio Test of Homogeneity
+                        of Variances
+hayterStoneTest         Hayter-Stone Test
+hsAllPairsTest          Hayter-Stone All-Pairs Comparison Test
+johnsonTest             Testing against Ordered Alternatives
+                        (Johnson-Mehrotra Test)
+jonckheereTest          Testing against Ordered Alternatives
+                        (Jonckheere-Terpstra Test)
+kruskalTest             Kruskal-Wallis Rank Sum Test
+kwAllPairsConoverTest   Conover's All-Pairs Rank Comparison Test
+kwAllPairsDunnTest      Dunn's All-Pairs Rank Comparison Test
+kwAllPairsNemenyiTest   Nemenyi's All-Pairs Rank Comparison Test
+kwManyOneConoverTest    Conover's Many-to-One Rank Comparison Test
+kwManyOneDunnTest       Dunn's Many-to-One Rank Comparison Test
+kwManyOneNdwTest        Nemenyi-Damico-Wolfe Many-to-One Rank
+                        Comparison Test
+leTest                  Testing against Ordered Alternatives (Le's
+                        Test)
+lsdTest                 Least Significant Difference Test
+mackWolfeTest           Mack-Wolfe Test for Umbrella Alternatives
+mandelhTest             Mandel's h Test According to E 691 ASTM
+mandelkTest             Mandel's k Test According to E 691 ASTM
+manyOneUTest            Multiple Comparisons with One Control (U-test)
+mrrTest                 Madhava Rao-Raghunath Test for Testing
+                        Treatment vs. Control
+normalScoresAllPairsTest
+                        Lu-Smith All-Pairs Comparison Normal Scores
+                        Test
+normalScoresManyOneTest
+                        Lu-Smith Many-One Comparisons Normal Scores
+                        Test
+normalScoresTest        Lu-Smith Normal Scores Test
+osrtTest                One-Sided Studentized Range Test
+pageTest                Page Rank Sum Test
+plot.PMCMR              Plotting PMCMR Objects
+plot.mandel             Plotting mandel Objects
+power.dunnett.test      Power Calculations for Balanced Dunnett's
+                        Many-to-One Comparison Test
+power.tukey.test        Power Calculations for Balanced Tukey's
+                        Multiple Comparison Test
+power.williams.test     Power calculations for minimum detectable
+                        difference of the Williams' test
+powerMCTests            Power Simulation for One-Factorial All-Pairs
+                        and Many-To-One Comparison Tests
+powerOneWayTests        Power Simulation for One-Factorial Single
+                        Hypothesis Tests
+print.PMCMR             PMCMR Printing
+print.gesdTest          gesdTest Printing
+print.mandel            Mandel Printing
+print.osrt              osrt Printing
+print.powerOneWayPMCMR
+                        PowerOneWayPMCMR Printing
+print.powerPMCMR        PowerPMCMR Printing
+print.trendPMCMR        trendPMCMR Printing
+qDunnett                Dunnett Distribution
+qPCR                    qPCR Curve Analysis Methods
+quadeAllPairsTest       All-Pairs Comparisons for Unreplicated Blocked
+                        Data (Quade's All-Pairs Test)
+reviewers               Reviewers
+scheffeTest             Scheffe's Test
+shanTest                Testing against Ordered Alternatives
+                        (Shan-Young-Kang Test)
+shirleyWilliamsTest     Shirley-Williams Test
+siegelTukeyTest         Siegel-Tukey Rank Dispersion Test
+skillingsMackTest       Skillings-Mack Test
+snkTest                 Student-Newman-Keuls Test
+spearmanTest            Testing against Ordered Alternatives (Spearman
+                        Test)
+steelTest               Steel's Many-to-One Rank Test
+steelsKSampleTest       Steel's k-Treatments vs. Control Test
+stepDownTrendTest       Step Down Trend Tests
+summary.PMCMR           Summarize an PMCMR Object
+summary.gesdTest        Summarize an gesdTest Object
+summary.mandel          Object Summary for class '"mandel"'
+summary.osrt            Summarize an osrt Object
+summary.trendPMCMR      Summarize an trendPMCMR Object
+summaryGroup            Grouped Summary of an PMCMR Object
+tamhaneDunnettTest      Tamhane-Dunnett Many-to-One Comparison Test
+tamhaneT2Test           Tamhane's T2 Test
+toTidy                  Convert a PMCMR or osrt Object to a Data.Frame
+trout                   Data from a Dose-Response Experiment with
+                        Trouts
+tukeyTest               Tukey's Multiple Comparison Test
+uryWigginsHochbergTest
+                        Ury, Wiggins, Hochberg Test
+vanWaerdenAllPairsTest
+                        van-der-Waerden's All-Pairs Comparison Normal
+                        Scores Test
+vanWaerdenManyOneTest   van-der-Waerden's Many-One Comparisons Normal
+                        Scores Test
+vanWaerdenTest          van der Waerden's Normal Scores Test
+welchManyOneTTest       Welchs's Many-To-One Comparison Test
+williamsTest            Williams Trend Test

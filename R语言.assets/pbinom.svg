@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="httpgd" width="1037.00" height="800.00" viewBox="0 0 829.60 640.00">
+<defs>
+  <style type='text/css'><![CDATA[
+    .httpgd line, .httpgd polyline, .httpgd polygon, .httpgd path, .httpgd rect, .httpgd circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+  ]]></style>
+<clipPath id="c0"><rect x="0.00" y="0.00" width="829.60" height="640.00"/></clipPath>
+<clipPath id="c1"><rect x="59.04" y="59.04" width="740.32" height="507.52"/></clipPath>
+<clipPath id="c2"><rect x="0.00" y="0.00" width="829.60" height="640.00"/></clipPath>
+</defs>
+<rect width="100%" height="100%" style="stroke: none;fill: #FFFFFF;"/>
+<g clip-path="url(#c0)">
+</g><g clip-path="url(#c1)">
+<line x1="86.46" y1="548.22" x2="86.46" y2="547.76" style="stroke-width: 0.75;stroke: #8C0000;"/>
+<line x1="155.01" y1="548.22" x2="155.01" y2="543.17" style="stroke-width: 0.75;stroke: #8C0000;"/>
+<line x1="223.56" y1="548.22" x2="223.56" y2="522.50" style="stroke-width: 0.75;stroke: #8C0000;"/>
+<line x1="292.10" y1="548.22" x2="292.10" y2="467.37" style="stroke-width: 0.75;stroke: #8C0000;"/>
+<line x1="360.65" y1="548.22" x2="360.65" y2="370.91" style="stroke-width: 0.75;stroke: #8C0000;"/>
+<line x1="429.20" y1="548.22" x2="429.20" y2="255.15" style="stroke-width: 0.75;stroke: #8C0000;"/>
+<line x1="497.75" y1="548.22" x2="497.75" y2="158.68" style="stroke-width: 0.75;stroke: #8C0000;"/>
+<line x1="566.30" y1="548.22" x2="566.30" y2="103.56" style="stroke-width: 0.75;stroke: #8C0000;"/>
+<line x1="634.84" y1="548.22" x2="634.84" y2="82.89" style="stroke-width: 0.75;stroke: #8C0000;"/>
+<line x1="703.39" y1="548.22" x2="703.39" y2="78.30" style="stroke-width: 0.75;stroke: #8C0000;"/>
+<line x1="771.94" y1="548.22" x2="771.94" y2="77.84" style="stroke-width: 0.75;stroke: #8C0000;"/>
+</g><g clip-path="url(#c2)">
+<line x1="86.46" y1="566.56" x2="771.94" y2="566.56" style="stroke-width: 0.75;"/>
+<line x1="86.46" y1="566.56" x2="86.46" y2="573.76" style="stroke-width: 0.75;"/>
+<line x1="223.56" y1="566.56" x2="223.56" y2="573.76" style="stroke-width: 0.75;"/>
+<line x1="360.65" y1="566.56" x2="360.65" y2="573.76" style="stroke-width: 0.75;"/>
+<line x1="497.75" y1="566.56" x2="497.75" y2="573.76" style="stroke-width: 0.75;"/>
+<line x1="634.84" y1="566.56" x2="634.84" y2="573.76" style="stroke-width: 0.75;"/>
+<line x1="771.94" y1="566.56" x2="771.94" y2="573.76" style="stroke-width: 0.75;"/>
+<g><text x="86.46" y="592.48" text-anchor="middle" style="font-family: Arial;font-size: 12.00px;" textLength="6.67px" lengthAdjust="spacingAndGlyphs">0</text></g>
+<g><text x="223.56" y="592.48" text-anchor="middle" style="font-family: Arial;font-size: 12.00px;" textLength="6.67px" lengthAdjust="spacingAndGlyphs">2</text></g>
+<g><text x="360.65" y="592.48" text-anchor="middle" style="font-family: Arial;font-size: 12.00px;" textLength="6.67px" lengthAdjust="spacingAndGlyphs">4</text></g>
+<g><text x="497.75" y="592.48" text-anchor="middle" style="font-family: Arial;font-size: 12.00px;" textLength="6.67px" lengthAdjust="spacingAndGlyphs">6</text></g>
+<g><text x="634.84" y="592.48" text-anchor="middle" style="font-family: Arial;font-size: 12.00px;" textLength="6.67px" lengthAdjust="spacingAndGlyphs">8</text></g>
+<g><text x="771.94" y="592.48" text-anchor="middle" style="font-family: Arial;font-size: 12.00px;" textLength="13.35px" lengthAdjust="spacingAndGlyphs">10</text></g>
+<line x1="59.04" y1="548.22" x2="59.04" y2="77.84" style="stroke-width: 0.75;"/>
+<line x1="59.04" y1="548.22" x2="51.84" y2="548.22" style="stroke-width: 0.75;"/>
+<line x1="59.04" y1="454.15" x2="51.84" y2="454.15" style="stroke-width: 0.75;"/>
+<line x1="59.04" y1="360.07" x2="51.84" y2="360.07" style="stroke-width: 0.75;"/>
+<line x1="59.04" y1="265.99" x2="51.84" y2="265.99" style="stroke-width: 0.75;"/>
+<line x1="59.04" y1="171.91" x2="51.84" y2="171.91" style="stroke-width: 0.75;"/>
+<line x1="59.04" y1="77.84" x2="51.84" y2="77.84" style="stroke-width: 0.75;"/>
+<g><text transform="translate(41.76,548.22) rotate(-90.00)" text-anchor="middle" style="font-family: Arial;font-size: 12.00px;" textLength="16.68px" lengthAdjust="spacingAndGlyphs">0.0</text></g>
+<g><text transform="translate(41.76,454.15) rotate(-90.00)" text-anchor="middle" style="font-family: Arial;font-size: 12.00px;" textLength="16.68px" lengthAdjust="spacingAndGlyphs">0.2</text></g>
+<g><text transform="translate(41.76,360.07) rotate(-90.00)" text-anchor="middle" style="font-family: Arial;font-size: 12.00px;" textLength="16.68px" lengthAdjust="spacingAndGlyphs">0.4</text></g>
+<g><text transform="translate(41.76,265.99) rotate(-90.00)" text-anchor="middle" style="font-family: Arial;font-size: 12.00px;" textLength="16.68px" lengthAdjust="spacingAndGlyphs">0.6</text></g>
+<g><text transform="translate(41.76,171.91) rotate(-90.00)" text-anchor="middle" style="font-family: Arial;font-size: 12.00px;" textLength="16.68px" lengthAdjust="spacingAndGlyphs">0.8</text></g>
+<g><text transform="translate(41.76,77.84) rotate(-90.00)" text-anchor="middle" style="font-family: Arial;font-size: 12.00px;" textLength="16.68px" lengthAdjust="spacingAndGlyphs">1.0</text></g>
+<polygon points="59.04,566.56 799.36,566.56 799.36,59.04 59.04,59.04" style="stroke-width: 0.75;" />
+<g><text x="429.20" y="34.70" text-anchor="middle" style="font-family: Arial;font-size: 14.40px;font-weight: bold;" textLength="83.17px" lengthAdjust="spacingAndGlyphs">概率累积分布函数</text></g>
+<g><text x="429.20" y="621.28" text-anchor="middle" style="font-family: Arial;font-size: 12.00px;" textLength="23.36px" lengthAdjust="spacingAndGlyphs">0:10</text></g>
+<g><text transform="translate(12.96,312.80) rotate(-90.00)" text-anchor="middle" style="font-family: Arial;font-size: 12.00px;" textLength="114.07px" lengthAdjust="spacingAndGlyphs">pbinom(0:10, 10, 0.5)</text></g>
+</g>
+</svg>

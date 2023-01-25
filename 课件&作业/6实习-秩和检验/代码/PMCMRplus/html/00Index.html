@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html>
+<head><title>R: Calculate Pairwise Multiple Comparisons of Mean Rank Sums
+Extended</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+<h1> Calculate Pairwise Multiple Comparisons of Mean Rank Sums
+Extended
+<img class="toplogo" src="../../../doc/html/Rlogo.svg" alt="[R logo]" />
+</h1>
+<hr/>
+<div style="text-align: center;">
+<a href="../../../doc/html/packages.html"><img class="arrow" src="../../../doc/html/left.jpg" alt="[Up]" /></a>
+<a href="../../../doc/html/index.html"><img class="arrow" src="../../../doc/html/up.jpg" alt="[Top]" /></a>
+</div><h2>Documentation for package &lsquo;PMCMRplus&rsquo; version 1.9.6</h2>
+
+<ul><li><a href="../DESCRIPTION">DESCRIPTION file</a>.</li>
+<li><a href="../doc/index.html">User guides, package vignettes and other documentation.</a></li>
+<li><a href="../demo">Code demos</a>.  Use <a href="../../utils/help/demo">demo()</a> to run them.</li>
+<li><a href="../NEWS">Package NEWS</a>.</li>
+</ul>
+
+<h2>Help Pages</h2>
+
+
+<p style="text-align: center;">
+<a href="#A">A</a>
+<a href="#B">B</a>
+<a href="#C">C</a>
+<a href="#D">D</a>
+<a href="#F">F</a>
+<a href="#G">G</a>
+<a href="#H">H</a>
+<a href="#J">J</a>
+<a href="#K">K</a>
+<a href="#L">L</a>
+<a href="#M">M</a>
+<a href="#N">N</a>
+<a href="#O">O</a>
+<a href="#P">P</a>
+<a href="#Q">Q</a>
+<a href="#R">R</a>
+<a href="#S">S</a>
+<a href="#T">T</a>
+<a href="#U">U</a>
+<a href="#V">V</a>
+<a href="#W">W</a>
+</p>
+
+
+<h2><a id="A">-- A --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="adAllPairsTest.html">adAllPairsTest</a></td>
+<td>Anderson-Darling All-Pairs Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="adAllPairsTest.html">adAllPairsTest.default</a></td>
+<td>Anderson-Darling All-Pairs Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="adAllPairsTest.html">adAllPairsTest.formula</a></td>
+<td>Anderson-Darling All-Pairs Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="adKSampleTest.html">adKSampleTest</a></td>
+<td>Anderson-Darling k-Sample Test</td></tr>
+<tr><td style="width: 25%;"><a href="adKSampleTest.html">adKSampleTest.default</a></td>
+<td>Anderson-Darling k-Sample Test</td></tr>
+<tr><td style="width: 25%;"><a href="adKSampleTest.html">adKSampleTest.formula</a></td>
+<td>Anderson-Darling k-Sample Test</td></tr>
+<tr><td style="width: 25%;"><a href="adManyOneTest.html">adManyOneTest</a></td>
+<td>Anderson-Darling Many-To-One Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="adManyOneTest.html">adManyOneTest.default</a></td>
+<td>Anderson-Darling Many-To-One Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="adManyOneTest.html">adManyOneTest.formula</a></td>
+<td>Anderson-Darling Many-To-One Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="algae.html">algae</a></td>
+<td>Algae Growth Inhibition Data Set</td></tr>
+</table>
+
+<h2><a id="B">-- B --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="barPlot.html">barPlot</a></td>
+<td>Plotting PMCMR Objects</td></tr>
+<tr><td style="width: 25%;"><a href="bwsAllPairsTest.html">bwsAllPairsTest</a></td>
+<td>BWS All-Pairs Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="bwsAllPairsTest.html">bwsAllPairsTest.default</a></td>
+<td>BWS All-Pairs Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="bwsAllPairsTest.html">bwsAllPairsTest.formula</a></td>
+<td>BWS All-Pairs Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="bwsKSampleTest.html">bwsKSampleTest</a></td>
+<td>Murakami's k-Sample BWS Test</td></tr>
+<tr><td style="width: 25%;"><a href="bwsKSampleTest.html">bwsKSampleTest.default</a></td>
+<td>Murakami's k-Sample BWS Test</td></tr>
+<tr><td style="width: 25%;"><a href="bwsKSampleTest.html">bwsKSampleTest.formula</a></td>
+<td>Murakami's k-Sample BWS Test</td></tr>
+<tr><td style="width: 25%;"><a href="bwsManyOneTest.html">bwsManyOneTest</a></td>
+<td>BWS Many-To-One Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="bwsManyOneTest.html">bwsManyOneTest.default</a></td>
+<td>BWS Many-To-One Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="bwsManyOneTest.html">bwsManyOneTest.formula</a></td>
+<td>BWS Many-To-One Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="bwsTrendTest.html">bwsTrendTest</a></td>
+<td>Testing against Ordered Alternatives (Murakami's BWS Trend Test)</td></tr>
+<tr><td style="width: 25%;"><a href="bwsTrendTest.html">bwsTrendTest.default</a></td>
+<td>Testing against Ordered Alternatives (Murakami's BWS Trend Test)</td></tr>
+<tr><td style="width: 25%;"><a href="bwsTrendTest.html">bwsTrendTest.formula</a></td>
+<td>Testing against Ordered Alternatives (Murakami's BWS Trend Test)</td></tr>
+</table>
+
+<h2><a id="C">-- C --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="chaAllPairsNashimotoTest.html">chaAllPairsNashimotoTest</a></td>
+<td>All-Pairs Comparisons for Simply Ordered Mean Ranksums</td></tr>
+<tr><td style="width: 25%;"><a href="chaAllPairsNashimotoTest.html">chaAllPairsNashimotoTest.default</a></td>
+<td>All-Pairs Comparisons for Simply Ordered Mean Ranksums</td></tr>
+<tr><td style="width: 25%;"><a href="chaAllPairsNashimotoTest.html">chaAllPairsNashimotoTest.formula</a></td>
+<td>All-Pairs Comparisons for Simply Ordered Mean Ranksums</td></tr>
+<tr><td style="width: 25%;"><a href="chackoTest.html">chackoTest</a></td>
+<td>Testing against Ordered Alternatives (Chacko's Test)</td></tr>
+<tr><td style="width: 25%;"><a href="chackoTest.html">chackoTest.default</a></td>
+<td>Testing against Ordered Alternatives (Chacko's Test)</td></tr>
+<tr><td style="width: 25%;"><a href="chackoTest.html">chackoTest.formula</a></td>
+<td>Testing against Ordered Alternatives (Chacko's Test)</td></tr>
+<tr><td style="width: 25%;"><a href="chenJanTest.html">chenJanTest</a></td>
+<td>Chen and Jan Many-to-One Comparisons Test</td></tr>
+<tr><td style="width: 25%;"><a href="chenJanTest.html">chenJanTest.default</a></td>
+<td>Chen and Jan Many-to-One Comparisons Test</td></tr>
+<tr><td style="width: 25%;"><a href="chenTest.html">chenTest</a></td>
+<td>Chen's Many-to-One Comparisons Test</td></tr>
+<tr><td style="width: 25%;"><a href="chenTest.html">chenTest.default</a></td>
+<td>Chen's Many-to-One Comparisons Test</td></tr>
+<tr><td style="width: 25%;"><a href="chenTest.html">chenTest.formula</a></td>
+<td>Chen's Many-to-One Comparisons Test</td></tr>
+<tr><td style="width: 25%;"><a href="Cochran.html">Cochran</a></td>
+<td>Cochran's distribution</td></tr>
+<tr><td style="width: 25%;"><a href="cochranTest.html">cochranTest</a></td>
+<td>Cochran Test</td></tr>
+<tr><td style="width: 25%;"><a href="cochranTest.html">cochranTest.default</a></td>
+<td>Cochran Test</td></tr>
+<tr><td style="width: 25%;"><a href="cochranTest.html">cochranTest.formula</a></td>
+<td>Cochran Test</td></tr>
+<tr><td style="width: 25%;"><a href="cuzickTest.html">cuzickTest</a></td>
+<td>Testing against Ordered Alternatives (Cuzick's Test)</td></tr>
+<tr><td style="width: 25%;"><a href="cuzickTest.html">cuzickTest.default</a></td>
+<td>Testing against Ordered Alternatives (Cuzick's Test)</td></tr>
+<tr><td style="width: 25%;"><a href="cuzickTest.html">cuzickTest.formula</a></td>
+<td>Testing against Ordered Alternatives (Cuzick's Test)</td></tr>
+</table>
+
+<h2><a id="D">-- D --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="kwAllPairsDunnTest.html">default</a></td>
+<td>Dunn's All-Pairs Rank Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="Dgrubbs.html">Dgrubbs</a></td>
+<td>Grubbs D* distribution</td></tr>
+<tr><td style="width: 25%;"><a href="doubleGrubbsTest.html">doubleGrubbsTest</a></td>
+<td>Grubbs Double Outlier Test</td></tr>
+<tr><td style="width: 25%;"><a href="dscfAllPairsTest.html">dscfAllPairsTest</a></td>
+<td>Multiple Comparisons of Mean Rank Sums</td></tr>
+<tr><td style="width: 25%;"><a href="dscfAllPairsTest.html">dscfAllPairsTest.default</a></td>
+<td>Multiple Comparisons of Mean Rank Sums</td></tr>
+<tr><td style="width: 25%;"><a href="dscfAllPairsTest.html">dscfAllPairsTest.formula</a></td>
+<td>Multiple Comparisons of Mean Rank Sums</td></tr>
+<tr><td style="width: 25%;"><a href="duncanTest.html">duncanTest</a></td>
+<td>Duncan's Multiple Range Test</td></tr>
+<tr><td style="width: 25%;"><a href="duncanTest.html">duncanTest.aov</a></td>
+<td>Duncan's Multiple Range Test</td></tr>
+<tr><td style="width: 25%;"><a href="duncanTest.html">duncanTest.default</a></td>
+<td>Duncan's Multiple Range Test</td></tr>
+<tr><td style="width: 25%;"><a href="duncanTest.html">duncanTest.formula</a></td>
+<td>Duncan's Multiple Range Test</td></tr>
+<tr><td style="width: 25%;"><a href="Dunnett.html">Dunnett</a></td>
+<td>Dunnett Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="dunnettT3Test.html">dunnettT3Test</a></td>
+<td>Dunnett's T3 Test</td></tr>
+<tr><td style="width: 25%;"><a href="dunnettT3Test.html">dunnettT3Test.aov</a></td>
+<td>Dunnett's T3 Test</td></tr>
+<tr><td style="width: 25%;"><a href="dunnettT3Test.html">dunnettT3Test.default</a></td>
+<td>Dunnett's T3 Test</td></tr>
+<tr><td style="width: 25%;"><a href="dunnettT3Test.html">dunnettT3Test.formula</a></td>
+<td>Dunnett's T3 Test</td></tr>
+<tr><td style="width: 25%;"><a href="dunnettTest.html">dunnettTest</a></td>
+<td>Dunnett's Many-to-One Comparisons Test</td></tr>
+<tr><td style="width: 25%;"><a href="dunnettTest.html">dunnettTest.aov</a></td>
+<td>Dunnett's Many-to-One Comparisons Test</td></tr>
+<tr><td style="width: 25%;"><a href="dunnettTest.html">dunnettTest.default</a></td>
+<td>Dunnett's Many-to-One Comparisons Test</td></tr>
+<tr><td style="width: 25%;"><a href="dunnettTest.html">dunnettTest.formula</a></td>
+<td>Dunnett's Many-to-One Comparisons Test</td></tr>
+<tr><td style="width: 25%;"><a href="durbinAllPairsTest.html">durbinAllPairsTest</a></td>
+<td>All-Pairs Comparisons Test for Balanced Incomplete Block Designs</td></tr>
+<tr><td style="width: 25%;"><a href="durbinAllPairsTest.html">durbinAllPairsTest.default</a></td>
+<td>All-Pairs Comparisons Test for Balanced Incomplete Block Designs</td></tr>
+<tr><td style="width: 25%;"><a href="durbinTest.html">durbinTest</a></td>
+<td>Durbin Test</td></tr>
+<tr><td style="width: 25%;"><a href="durbinTest.html">durbinTest.default</a></td>
+<td>Durbin Test</td></tr>
+</table>
+
+<h2><a id="F">-- F --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="flignerWolfeTest.html">flignerWolfeTest</a></td>
+<td>Testing Several Treatments With One Control</td></tr>
+<tr><td style="width: 25%;"><a href="flignerWolfeTest.html">flignerWolfeTest.default</a></td>
+<td>Testing Several Treatments With One Control</td></tr>
+<tr><td style="width: 25%;"><a href="flignerWolfeTest.html">flignerWolfeTest.formula</a></td>
+<td>Testing Several Treatments With One Control</td></tr>
+<tr><td style="width: 25%;"><a href="frdAllPairsConoverTest.html">frdAllPairsConoverTest</a></td>
+<td>Conover's All-Pairs Comparisons Test for Unreplicated Blocked Data</td></tr>
+<tr><td style="width: 25%;"><a href="frdAllPairsConoverTest.html">frdAllPairsConoverTest.default</a></td>
+<td>Conover's All-Pairs Comparisons Test for Unreplicated Blocked Data</td></tr>
+<tr><td style="width: 25%;"><a href="frdAllPairsExactTest.html">frdAllPairsExactTest</a></td>
+<td>Exact All-Pairs Comparisons Test for Unreplicated Blocked Data</td></tr>
+<tr><td style="width: 25%;"><a href="frdAllPairsExactTest.html">frdAllPairsExactTest.default</a></td>
+<td>Exact All-Pairs Comparisons Test for Unreplicated Blocked Data</td></tr>
+<tr><td style="width: 25%;"><a href="frdAllPairsMillerTest.html">frdAllPairsMillerTest</a></td>
+<td>Millers's All-Pairs Comparisons Test for Unreplicated Blocked Data</td></tr>
+<tr><td style="width: 25%;"><a href="frdAllPairsMillerTest.html">frdAllPairsMillerTest.default</a></td>
+<td>Millers's All-Pairs Comparisons Test for Unreplicated Blocked Data</td></tr>
+<tr><td style="width: 25%;"><a href="frdAllPairsNemenyiTest.html">frdAllPairsNemenyiTest</a></td>
+<td>Nemenyi's All-Pairs Comparisons Test for Unreplicated Blocked Data</td></tr>
+<tr><td style="width: 25%;"><a href="frdAllPairsNemenyiTest.html">frdAllPairsNemenyiTest.default</a></td>
+<td>Nemenyi's All-Pairs Comparisons Test for Unreplicated Blocked Data</td></tr>
+<tr><td style="width: 25%;"><a href="frdAllPairsNemenyiTest.html">frdAllPairsNemenyiTest.formula</a></td>
+<td>Nemenyi's All-Pairs Comparisons Test for Unreplicated Blocked Data</td></tr>
+<tr><td style="width: 25%;"><a href="frdAllPairsSiegelTest.html">frdAllPairsSiegelTest</a></td>
+<td>Siegel and Castellan's All-Pairs Comparisons Test for Unreplicated Blocked Data</td></tr>
+<tr><td style="width: 25%;"><a href="frdAllPairsSiegelTest.html">frdAllPairsSiegelTest.default</a></td>
+<td>Siegel and Castellan's All-Pairs Comparisons Test for Unreplicated Blocked Data</td></tr>
+<tr><td style="width: 25%;"><a href="frdHouseTest.html">frdHouseTest</a></td>
+<td>House Test</td></tr>
+<tr><td style="width: 25%;"><a href="frdHouseTest.html">frdHouseTest.default</a></td>
+<td>House Test</td></tr>
+<tr><td style="width: 25%;"><a href="frdManyOneDemsarTest.html">frdManyOneDemsarTest</a></td>
+<td>Demsar's Many-to-One Test for Unreplicated Blocked Data</td></tr>
+<tr><td style="width: 25%;"><a href="frdManyOneDemsarTest.html">frdManyOneDemsarTest.default</a></td>
+<td>Demsar's Many-to-One Test for Unreplicated Blocked Data</td></tr>
+<tr><td style="width: 25%;"><a href="frdManyOneExactTest.html">frdManyOneExactTest</a></td>
+<td>Exact Many-to-One Test for Unreplicated Blocked Data</td></tr>
+<tr><td style="width: 25%;"><a href="frdManyOneExactTest.html">frdManyOneExactTest.default</a></td>
+<td>Exact Many-to-One Test for Unreplicated Blocked Data</td></tr>
+<tr><td style="width: 25%;"><a href="frdManyOneNemenyiTest.html">frdManyOneNemenyiTest</a></td>
+<td>Nemenyi's Many-to-One Test for Unreplicated Blocked Data</td></tr>
+<tr><td style="width: 25%;"><a href="frdManyOneNemenyiTest.html">frdManyOneNemenyiTest.default</a></td>
+<td>Nemenyi's Many-to-One Test for Unreplicated Blocked Data</td></tr>
+<tr><td style="width: 25%;"><a href="friedmanTest.html">friedmanTest</a></td>
+<td>Friedman Rank Sum Test</td></tr>
+<tr><td style="width: 25%;"><a href="friedmanTest.html">friedmanTest.default</a></td>
+<td>Friedman Rank Sum Test</td></tr>
+</table>
+
+<h2><a id="G">-- G --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="gamesHowellTest.html">gamesHowellTest</a></td>
+<td>Games-Howell Test</td></tr>
+<tr><td style="width: 25%;"><a href="gamesHowellTest.html">gamesHowellTest.aov</a></td>
+<td>Games-Howell Test</td></tr>
+<tr><td style="width: 25%;"><a href="gamesHowellTest.html">gamesHowellTest.default</a></td>
+<td>Games-Howell Test</td></tr>
+<tr><td style="width: 25%;"><a href="gamesHowellTest.html">gamesHowellTest.formula</a></td>
+<td>Games-Howell Test</td></tr>
+<tr><td style="width: 25%;"><a href="gesdTest.html">gesdTest</a></td>
+<td>Generalized Extreme Studentized Deviate Many-Outlier Test</td></tr>
+<tr><td style="width: 25%;"><a href="goreTest.html">goreTest</a></td>
+<td>Gore Test</td></tr>
+<tr><td style="width: 25%;"><a href="Grubbs.html">Grubbs</a></td>
+<td>Grubbs distribution</td></tr>
+<tr><td style="width: 25%;"><a href="grubbsTest.html">grubbsTest</a></td>
+<td>Grubbs Outlier Test</td></tr>
+<tr><td style="width: 25%;"><a href="GSTTest.html">GSTTest</a></td>
+<td>Generalized Siegel-Tukey Test of Homogeneity of Scales</td></tr>
+<tr><td style="width: 25%;"><a href="GSTTest.html">GSTTest.default</a></td>
+<td>Generalized Siegel-Tukey Test of Homogeneity of Scales</td></tr>
+<tr><td style="width: 25%;"><a href="GSTTest.html">GSTTest.formula</a></td>
+<td>Generalized Siegel-Tukey Test of Homogeneity of Scales</td></tr>
+</table>
+
+<h2><a id="H">-- H --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="hartleyTest.html">hartleyTest</a></td>
+<td>Hartley's Maximum F-Ratio Test of Homogeneity of Variances</td></tr>
+<tr><td style="width: 25%;"><a href="hartleyTest.html">hartleyTest.default</a></td>
+<td>Hartley's Maximum F-Ratio Test of Homogeneity of Variances</td></tr>
+<tr><td style="width: 25%;"><a href="hartleyTest.html">hartleyTest.formula</a></td>
+<td>Hartley's Maximum F-Ratio Test of Homogeneity of Variances</td></tr>
+<tr><td style="width: 25%;"><a href="hayterStoneTest.html">hayterStoneTest</a></td>
+<td>Hayter-Stone Test</td></tr>
+<tr><td style="width: 25%;"><a href="hayterStoneTest.html">hayterStoneTest.default</a></td>
+<td>Hayter-Stone Test</td></tr>
+<tr><td style="width: 25%;"><a href="hayterStoneTest.html">hayterStoneTest.formula</a></td>
+<td>Hayter-Stone Test</td></tr>
+<tr><td style="width: 25%;"><a href="hsAllPairsTest.html">hsAllPairsTest</a></td>
+<td>Hayter-Stone All-Pairs Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="hsAllPairsTest.html">hsAllPairsTest.default</a></td>
+<td>Hayter-Stone All-Pairs Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="hsAllPairsTest.html">hsAllPairsTest.formula</a></td>
+<td>Hayter-Stone All-Pairs Comparison Test</td></tr>
+</table>
+
+<h2><a id="J">-- J --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="johnsonTest.html">johnsonTest</a></td>
+<td>Testing against Ordered Alternatives (Johnson-Mehrotra Test)</td></tr>
+<tr><td style="width: 25%;"><a href="johnsonTest.html">johnsonTest.default</a></td>
+<td>Testing against Ordered Alternatives (Johnson-Mehrotra Test)</td></tr>
+<tr><td style="width: 25%;"><a href="johnsonTest.html">johnsonTest.formula</a></td>
+<td>Testing against Ordered Alternatives (Johnson-Mehrotra Test)</td></tr>
+<tr><td style="width: 25%;"><a href="jonckheereTest.html">jonckheereTest</a></td>
+<td>Testing against Ordered Alternatives (Jonckheere-Terpstra Test)</td></tr>
+<tr><td style="width: 25%;"><a href="jonckheereTest.html">jonckheereTest.default</a></td>
+<td>Testing against Ordered Alternatives (Jonckheere-Terpstra Test)</td></tr>
+<tr><td style="width: 25%;"><a href="jonckheereTest.html">jonckheereTest.formula</a></td>
+<td>Testing against Ordered Alternatives (Jonckheere-Terpstra Test)</td></tr>
+</table>
+
+<h2><a id="K">-- K --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="kruskalTest.html">kruskalTest</a></td>
+<td>Kruskal-Wallis Rank Sum Test</td></tr>
+<tr><td style="width: 25%;"><a href="kruskalTest.html">kruskalTest.default</a></td>
+<td>Kruskal-Wallis Rank Sum Test</td></tr>
+<tr><td style="width: 25%;"><a href="kruskalTest.html">kruskalTest.formula</a></td>
+<td>Kruskal-Wallis Rank Sum Test</td></tr>
+<tr><td style="width: 25%;"><a href="kwAllPairsConoverTest.html">kwAllPairsConoverTest</a></td>
+<td>Conover's All-Pairs Rank Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="kwAllPairsConoverTest.html">kwAllPairsConoverTest.default</a></td>
+<td>Conover's All-Pairs Rank Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="kwAllPairsConoverTest.html">kwAllPairsConoverTest.formula</a></td>
+<td>Conover's All-Pairs Rank Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="kwAllPairsDunnTest.html">kwAllPairsDunnTest</a></td>
+<td>Dunn's All-Pairs Rank Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="kwAllPairsDunnTest.html">kwAllPairsDunnTest.default</a></td>
+<td>Dunn's All-Pairs Rank Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="kwAllPairsDunnTest.html">kwAllPairsDunnTest.formula</a></td>
+<td>Dunn's All-Pairs Rank Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="kwAllPairsNemenyiTest.html">kwAllPairsNemenyiTest</a></td>
+<td>Nemenyi's All-Pairs Rank Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="kwAllPairsNemenyiTest.html">kwAllPairsNemenyiTest.default</a></td>
+<td>Nemenyi's All-Pairs Rank Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="kwAllPairsNemenyiTest.html">kwAllPairsNemenyiTest.formula</a></td>
+<td>Nemenyi's All-Pairs Rank Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="kwManyOneConoverTest.html">kwManyOneConoverTest</a></td>
+<td>Conover's Many-to-One Rank Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="kwManyOneConoverTest.html">kwManyOneConoverTest.default</a></td>
+<td>Conover's Many-to-One Rank Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="kwManyOneConoverTest.html">kwManyOneConoverTest.formula</a></td>
+<td>Conover's Many-to-One Rank Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="kwManyOneDunnTest.html">kwManyOneDunnTest</a></td>
+<td>Dunn's Many-to-One Rank Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="kwManyOneDunnTest.html">kwManyOneDunnTest.default</a></td>
+<td>Dunn's Many-to-One Rank Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="kwManyOneDunnTest.html">kwManyOneDunnTest.formula</a></td>
+<td>Dunn's Many-to-One Rank Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="kwManyOneNdwTest.html">kwManyOneNdwTest</a></td>
+<td>Nemenyi-Damico-Wolfe Many-to-One Rank Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="kwManyOneNdwTest.html">kwManyOneNdwTest.default</a></td>
+<td>Nemenyi-Damico-Wolfe Many-to-One Rank Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="kwManyOneNdwTest.html">kwManyOneNdwTest.formula</a></td>
+<td>Nemenyi-Damico-Wolfe Many-to-One Rank Comparison Test</td></tr>
+</table>
+
+<h2><a id="L">-- L --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="leTest.html">leTest</a></td>
+<td>Testing against Ordered Alternatives (Le's Test)</td></tr>
+<tr><td style="width: 25%;"><a href="leTest.html">leTest.default</a></td>
+<td>Testing against Ordered Alternatives (Le's Test)</td></tr>
+<tr><td style="width: 25%;"><a href="leTest.html">leTest.formula</a></td>
+<td>Testing against Ordered Alternatives (Le's Test)</td></tr>
+<tr><td style="width: 25%;"><a href="lsdTest.html">lsdTest</a></td>
+<td>Least Significant Difference Test</td></tr>
+<tr><td style="width: 25%;"><a href="lsdTest.html">lsdTest.aov</a></td>
+<td>Least Significant Difference Test</td></tr>
+<tr><td style="width: 25%;"><a href="lsdTest.html">lsdTest.default</a></td>
+<td>Least Significant Difference Test</td></tr>
+<tr><td style="width: 25%;"><a href="lsdTest.html">lsdTest.formula</a></td>
+<td>Least Significant Difference Test</td></tr>
+</table>
+
+<h2><a id="M">-- M --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="mackWolfeTest.html">mackWolfeTest</a></td>
+<td>Mack-Wolfe Test for Umbrella Alternatives</td></tr>
+<tr><td style="width: 25%;"><a href="mackWolfeTest.html">mackWolfeTest.default</a></td>
+<td>Mack-Wolfe Test for Umbrella Alternatives</td></tr>
+<tr><td style="width: 25%;"><a href="mackWolfeTest.html">mackWolfeTest.formula</a></td>
+<td>Mack-Wolfe Test for Umbrella Alternatives</td></tr>
+<tr><td style="width: 25%;"><a href="Mandel-h.html">Mandel-h</a></td>
+<td>Mandel's h Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="Mandel-k.html">Mandel-k</a></td>
+<td>Mandel's k Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="mandelhTest.html">mandelhTest</a></td>
+<td>Mandel's h Test According to E 691 ASTM</td></tr>
+<tr><td style="width: 25%;"><a href="mandelhTest.html">mandelhTest.default</a></td>
+<td>Mandel's h Test According to E 691 ASTM</td></tr>
+<tr><td style="width: 25%;"><a href="mandelhTest.html">mandelhTest.formula</a></td>
+<td>Mandel's h Test According to E 691 ASTM</td></tr>
+<tr><td style="width: 25%;"><a href="mandelkTest.html">mandelkTest</a></td>
+<td>Mandel's k Test According to E 691 ASTM</td></tr>
+<tr><td style="width: 25%;"><a href="mandelkTest.html">mandelkTest.default</a></td>
+<td>Mandel's k Test According to E 691 ASTM</td></tr>
+<tr><td style="width: 25%;"><a href="mandelkTest.html">mandelkTest.formula</a></td>
+<td>Mandel's k Test According to E 691 ASTM</td></tr>
+<tr><td style="width: 25%;"><a href="manyOneUTest.html">manyOneUTest</a></td>
+<td>Multiple Comparisons with One Control (U-test)</td></tr>
+<tr><td style="width: 25%;"><a href="manyOneUTest.html">manyOneUTest.default</a></td>
+<td>Multiple Comparisons with One Control (U-test)</td></tr>
+<tr><td style="width: 25%;"><a href="manyOneUTest.html">manyOneUTest.formula</a></td>
+<td>Multiple Comparisons with One Control (U-test)</td></tr>
+<tr><td style="width: 25%;"><a href="mrrTest.html">mrrTest</a></td>
+<td>Madhava Rao-Raghunath Test for Testing Treatment vs. Control</td></tr>
+<tr><td style="width: 25%;"><a href="mrrTest.html">mrrTest.default</a></td>
+<td>Madhava Rao-Raghunath Test for Testing Treatment vs. Control</td></tr>
+<tr><td style="width: 25%;"><a href="mrrTest.html">mrrTest.formula</a></td>
+<td>Madhava Rao-Raghunath Test for Testing Treatment vs. Control</td></tr>
+<tr><td style="width: 25%;"><a href="MTest.html">MTest</a></td>
+<td>Extended One-Sided Studentised Range Test</td></tr>
+<tr><td style="width: 25%;"><a href="MTest.html">MTest.aov</a></td>
+<td>Extended One-Sided Studentised Range Test</td></tr>
+<tr><td style="width: 25%;"><a href="MTest.html">MTest.default</a></td>
+<td>Extended One-Sided Studentised Range Test</td></tr>
+<tr><td style="width: 25%;"><a href="MTest.html">MTest.formula</a></td>
+<td>Extended One-Sided Studentised Range Test</td></tr>
+</table>
+
+<h2><a id="N">-- N --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="normalScoresAllPairsTest.html">normalScoresAllPairsTest</a></td>
+<td>Lu-Smith All-Pairs Comparison Normal Scores Test</td></tr>
+<tr><td style="width: 25%;"><a href="normalScoresAllPairsTest.html">normalScoresAllPairsTest.default</a></td>
+<td>Lu-Smith All-Pairs Comparison Normal Scores Test</td></tr>
+<tr><td style="width: 25%;"><a href="normalScoresAllPairsTest.html">normalScoresAllPairsTest.formula</a></td>
+<td>Lu-Smith All-Pairs Comparison Normal Scores Test</td></tr>
+<tr><td style="width: 25%;"><a href="normalScoresManyOneTest.html">normalScoresManyOneTest</a></td>
+<td>Lu-Smith Many-One Comparisons Normal Scores Test</td></tr>
+<tr><td style="width: 25%;"><a href="normalScoresManyOneTest.html">normalScoresManyOneTest.default</a></td>
+<td>Lu-Smith Many-One Comparisons Normal Scores Test</td></tr>
+<tr><td style="width: 25%;"><a href="normalScoresManyOneTest.html">normalScoresManyOneTest.formula</a></td>
+<td>Lu-Smith Many-One Comparisons Normal Scores Test</td></tr>
+<tr><td style="width: 25%;"><a href="normalScoresTest.html">normalScoresTest</a></td>
+<td>Lu-Smith Normal Scores Test</td></tr>
+<tr><td style="width: 25%;"><a href="normalScoresTest.html">normalScoresTest.default</a></td>
+<td>Lu-Smith Normal Scores Test</td></tr>
+<tr><td style="width: 25%;"><a href="normalScoresTest.html">normalScoresTest.formula</a></td>
+<td>Lu-Smith Normal Scores Test</td></tr>
+<tr><td style="width: 25%;"><a href="NPMTest.html">NPMTest</a></td>
+<td>All-Pairs Comparisons for Simply Ordered Mean Ranksums</td></tr>
+<tr><td style="width: 25%;"><a href="NPMTest.html">NPMTest.default</a></td>
+<td>All-Pairs Comparisons for Simply Ordered Mean Ranksums</td></tr>
+<tr><td style="width: 25%;"><a href="NPMTest.html">NPMTest.formula</a></td>
+<td>All-Pairs Comparisons for Simply Ordered Mean Ranksums</td></tr>
+</table>
+
+<h2><a id="O">-- O --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="osrtTest.html">osrtTest</a></td>
+<td>One-Sided Studentized Range Test</td></tr>
+<tr><td style="width: 25%;"><a href="osrtTest.html">osrtTest.aov</a></td>
+<td>One-Sided Studentized Range Test</td></tr>
+<tr><td style="width: 25%;"><a href="osrtTest.html">osrtTest.default</a></td>
+<td>One-Sided Studentized Range Test</td></tr>
+<tr><td style="width: 25%;"><a href="osrtTest.html">osrtTest.formula</a></td>
+<td>One-Sided Studentized Range Test</td></tr>
+</table>
+
+<h2><a id="P">-- P --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="pageTest.html">pageTest</a></td>
+<td>Page Rank Sum Test</td></tr>
+<tr><td style="width: 25%;"><a href="pageTest.html">pageTest.default</a></td>
+<td>Page Rank Sum Test</td></tr>
+<tr><td style="width: 25%;"><a href="Cochran.html">pcochran</a></td>
+<td>Cochran's distribution</td></tr>
+<tr><td style="width: 25%;"><a href="Dgrubbs.html">pdgrubbs</a></td>
+<td>Grubbs D* distribution</td></tr>
+<tr><td style="width: 25%;"><a href="Dunnett.html">pDunnett</a></td>
+<td>Dunnett Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="Pentosan.html">Pentosan</a></td>
+<td>Pentosan Dataset</td></tr>
+<tr><td style="width: 25%;"><a href="Grubbs.html">pgrubbs</a></td>
+<td>Grubbs distribution</td></tr>
+<tr><td style="width: 25%;"><a href="plot.mandel.html">plot.mandel</a></td>
+<td>Plotting mandel Objects</td></tr>
+<tr><td style="width: 25%;"><a href="plot.PMCMR.html">plot.PMCMR</a></td>
+<td>Plotting PMCMR Objects</td></tr>
+<tr><td style="width: 25%;"><a href="Mandel-h.html">pmandelh</a></td>
+<td>Mandel's h Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="Mandel-k.html">pmandelk</a></td>
+<td>Mandel's k Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="power.dunnett.test.html">power.dunnett.test</a></td>
+<td>Power Calculations for Balanced Dunnett's Many-to-One Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="power.tukey.test.html">power.tukey.test</a></td>
+<td>Power Calculations for Balanced Tukey's Multiple Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="power.williams.test.html">power.williams.test</a></td>
+<td>Power calculations for minimum detectable difference of the Williams' test</td></tr>
+<tr><td style="width: 25%;"><a href="powerMCTests.html">powerMCTests</a></td>
+<td>Power Simulation for One-Factorial All-Pairs and Many-To-One Comparison Tests</td></tr>
+<tr><td style="width: 25%;"><a href="powerOneWayTests.html">powerOneWayTests</a></td>
+<td>Power Simulation for One-Factorial Single Hypothesis Tests</td></tr>
+<tr><td style="width: 25%;"><a href="print.mandel.html">print</a></td>
+<td>Mandel Printing</td></tr>
+<tr><td style="width: 25%;"><a href="print.gesdTest.html">print.gesdTest</a></td>
+<td>gesdTest Printing</td></tr>
+<tr><td style="width: 25%;"><a href="print.mandel.html">print.mandel</a></td>
+<td>Mandel Printing</td></tr>
+<tr><td style="width: 25%;"><a href="print.osrt.html">print.osrt</a></td>
+<td>osrt Printing</td></tr>
+<tr><td style="width: 25%;"><a href="print.PMCMR.html">print.PMCMR</a></td>
+<td>PMCMR Printing</td></tr>
+<tr><td style="width: 25%;"><a href="print.powerOneWayPMCMR.html">print.powerOneWayPMCMR</a></td>
+<td>PowerOneWayPMCMR Printing</td></tr>
+<tr><td style="width: 25%;"><a href="print.powerPMCMR.html">print.powerPMCMR</a></td>
+<td>PowerPMCMR Printing</td></tr>
+<tr><td style="width: 25%;"><a href="print.trendPMCMR.html">print.trendPMCMR</a></td>
+<td>trendPMCMR Printing</td></tr>
+</table>
+
+<h2><a id="Q">-- Q --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="Cochran.html">qcochran</a></td>
+<td>Cochran's distribution</td></tr>
+<tr><td style="width: 25%;"><a href="Dunnett.html">qDunnett</a></td>
+<td>Dunnett Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="Grubbs.html">qgrubbs</a></td>
+<td>Grubbs distribution</td></tr>
+<tr><td style="width: 25%;"><a href="Mandel-h.html">qmandelh</a></td>
+<td>Mandel's h Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="Mandel-k.html">qmandelk</a></td>
+<td>Mandel's k Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="qPCR.html">qPCR</a></td>
+<td>qPCR Curve Analysis Methods</td></tr>
+<tr><td style="width: 25%;"><a href="quadeAllPairsTest.html">quadeAllPairsTest</a></td>
+<td>All-Pairs Comparisons for Unreplicated Blocked Data (Quade's All-Pairs Test)</td></tr>
+<tr><td style="width: 25%;"><a href="quadeAllPairsTest.html">quadeAllPairsTest.default</a></td>
+<td>All-Pairs Comparisons for Unreplicated Blocked Data (Quade's All-Pairs Test)</td></tr>
+</table>
+
+<h2><a id="R">-- R --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="reviewers.html">reviewers</a></td>
+<td>Reviewers</td></tr>
+</table>
+
+<h2><a id="S">-- S --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="scheffeTest.html">scheffeTest</a></td>
+<td>Scheffe's Test</td></tr>
+<tr><td style="width: 25%;"><a href="scheffeTest.html">scheffeTest.aov</a></td>
+<td>Scheffe's Test</td></tr>
+<tr><td style="width: 25%;"><a href="scheffeTest.html">scheffeTest.default</a></td>
+<td>Scheffe's Test</td></tr>
+<tr><td style="width: 25%;"><a href="scheffeTest.html">scheffeTest.formula</a></td>
+<td>Scheffe's Test</td></tr>
+<tr><td style="width: 25%;"><a href="shanTest.html">shanTest</a></td>
+<td>Testing against Ordered Alternatives (Shan-Young-Kang Test)</td></tr>
+<tr><td style="width: 25%;"><a href="shanTest.html">shanTest.default</a></td>
+<td>Testing against Ordered Alternatives (Shan-Young-Kang Test)</td></tr>
+<tr><td style="width: 25%;"><a href="shanTest.html">shanTest.formula</a></td>
+<td>Testing against Ordered Alternatives (Shan-Young-Kang Test)</td></tr>
+<tr><td style="width: 25%;"><a href="shirleyWilliamsTest.html">shirleyWilliamsTest</a></td>
+<td>Shirley-Williams Test</td></tr>
+<tr><td style="width: 25%;"><a href="shirleyWilliamsTest.html">shirleyWilliamsTest.default</a></td>
+<td>Shirley-Williams Test</td></tr>
+<tr><td style="width: 25%;"><a href="shirleyWilliamsTest.html">shirleyWilliamsTest.formula</a></td>
+<td>Shirley-Williams Test</td></tr>
+<tr><td style="width: 25%;"><a href="siegelTukeyTest.html">siegelTukeyTest</a></td>
+<td>Siegel-Tukey Rank Dispersion Test</td></tr>
+<tr><td style="width: 25%;"><a href="siegelTukeyTest.html">siegelTukeyTest.default</a></td>
+<td>Siegel-Tukey Rank Dispersion Test</td></tr>
+<tr><td style="width: 25%;"><a href="siegelTukeyTest.html">siegelTukeyTest.formula</a></td>
+<td>Siegel-Tukey Rank Dispersion Test</td></tr>
+<tr><td style="width: 25%;"><a href="skillingsMackTest.html">skillingsMackTest</a></td>
+<td>Skillings-Mack Test</td></tr>
+<tr><td style="width: 25%;"><a href="skillingsMackTest.html">skillingsMackTest.default</a></td>
+<td>Skillings-Mack Test</td></tr>
+<tr><td style="width: 25%;"><a href="snkTest.html">snkTest</a></td>
+<td>Student-Newman-Keuls Test</td></tr>
+<tr><td style="width: 25%;"><a href="snkTest.html">snkTest.aov</a></td>
+<td>Student-Newman-Keuls Test</td></tr>
+<tr><td style="width: 25%;"><a href="snkTest.html">snkTest.default</a></td>
+<td>Student-Newman-Keuls Test</td></tr>
+<tr><td style="width: 25%;"><a href="snkTest.html">snkTest.formula</a></td>
+<td>Student-Newman-Keuls Test</td></tr>
+<tr><td style="width: 25%;"><a href="spearmanTest.html">spearmanTest</a></td>
+<td>Testing against Ordered Alternatives (Spearman Test)</td></tr>
+<tr><td style="width: 25%;"><a href="spearmanTest.html">spearmanTest.default</a></td>
+<td>Testing against Ordered Alternatives (Spearman Test)</td></tr>
+<tr><td style="width: 25%;"><a href="spearmanTest.html">spearmanTest.formula</a></td>
+<td>Testing against Ordered Alternatives (Spearman Test)</td></tr>
+<tr><td style="width: 25%;"><a href="steelsKSampleTest.html">steelsKSampleTest</a></td>
+<td>Steel's k-Treatments vs. Control Test</td></tr>
+<tr><td style="width: 25%;"><a href="steelsKSampleTest.html">steelsKSampleTest.default</a></td>
+<td>Steel's k-Treatments vs. Control Test</td></tr>
+<tr><td style="width: 25%;"><a href="steelsKSampleTest.html">steelsKSampleTest.formula</a></td>
+<td>Steel's k-Treatments vs. Control Test</td></tr>
+<tr><td style="width: 25%;"><a href="steelTest.html">steelTest</a></td>
+<td>Steel's Many-to-One Rank Test</td></tr>
+<tr><td style="width: 25%;"><a href="steelTest.html">steelTest.default</a></td>
+<td>Steel's Many-to-One Rank Test</td></tr>
+<tr><td style="width: 25%;"><a href="steelTest.html">steelTest.formula</a></td>
+<td>Steel's Many-to-One Rank Test</td></tr>
+<tr><td style="width: 25%;"><a href="stepDownTrendTest.html">stepDownTrendTest</a></td>
+<td>Step Down Trend Tests</td></tr>
+<tr><td style="width: 25%;"><a href="stepDownTrendTest.html">stepDownTrendTest.default</a></td>
+<td>Step Down Trend Tests</td></tr>
+<tr><td style="width: 25%;"><a href="stepDownTrendTest.html">stepDownTrendTest.formula</a></td>
+<td>Step Down Trend Tests</td></tr>
+<tr><td style="width: 25%;"><a href="summary.gesdTest.html">summary.gesdTest</a></td>
+<td>Summarize an gesdTest Object</td></tr>
+<tr><td style="width: 25%;"><a href="summary.mandel.html">summary.mandel</a></td>
+<td>Object Summary for class '"mandel"'</td></tr>
+<tr><td style="width: 25%;"><a href="summary.osrt.html">summary.osrt</a></td>
+<td>Summarize an osrt Object</td></tr>
+<tr><td style="width: 25%;"><a href="summary.PMCMR.html">summary.PMCMR</a></td>
+<td>Summarize an PMCMR Object</td></tr>
+<tr><td style="width: 25%;"><a href="summary.trendPMCMR.html">summary.trendPMCMR</a></td>
+<td>Summarize an trendPMCMR Object</td></tr>
+<tr><td style="width: 25%;"><a href="summaryGroup.html">summaryGroup</a></td>
+<td>Grouped Summary of an PMCMR Object</td></tr>
+</table>
+
+<h2><a id="T">-- T --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="tamhaneDunnettTest.html">tamhaneDunnettTest</a></td>
+<td>Tamhane-Dunnett Many-to-One Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="tamhaneDunnettTest.html">tamhaneDunnettTest.aov</a></td>
+<td>Tamhane-Dunnett Many-to-One Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="tamhaneDunnettTest.html">tamhaneDunnettTest.default</a></td>
+<td>Tamhane-Dunnett Many-to-One Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="tamhaneDunnettTest.html">tamhaneDunnettTest.formula</a></td>
+<td>Tamhane-Dunnett Many-to-One Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="tamhaneT2Test.html">tamhaneT2Test</a></td>
+<td>Tamhane's T2 Test</td></tr>
+<tr><td style="width: 25%;"><a href="tamhaneT2Test.html">tamhaneT2Test.aov</a></td>
+<td>Tamhane's T2 Test</td></tr>
+<tr><td style="width: 25%;"><a href="tamhaneT2Test.html">tamhaneT2Test.default</a></td>
+<td>Tamhane's T2 Test</td></tr>
+<tr><td style="width: 25%;"><a href="tamhaneT2Test.html">tamhaneT2Test.formula</a></td>
+<td>Tamhane's T2 Test</td></tr>
+<tr><td style="width: 25%;"><a href="toTidy.html">toTidy</a></td>
+<td>Convert a PMCMR or osrt Object to a Data.Frame</td></tr>
+<tr><td style="width: 25%;"><a href="trout.html">trout</a></td>
+<td>Data from a Dose-Response Experiment with Trouts</td></tr>
+<tr><td style="width: 25%;"><a href="tukeyTest.html">tukeyTest</a></td>
+<td>Tukey's Multiple Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="tukeyTest.html">tukeyTest.aov</a></td>
+<td>Tukey's Multiple Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="tukeyTest.html">tukeyTest.default</a></td>
+<td>Tukey's Multiple Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="tukeyTest.html">tukeyTest.formula</a></td>
+<td>Tukey's Multiple Comparison Test</td></tr>
+</table>
+
+<h2><a id="U">-- U --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="uryWigginsHochbergTest.html">uryWigginsHochbergTest</a></td>
+<td>Ury, Wiggins, Hochberg Test</td></tr>
+<tr><td style="width: 25%;"><a href="uryWigginsHochbergTest.html">uryWigginsHochbergTest.aov</a></td>
+<td>Ury, Wiggins, Hochberg Test</td></tr>
+<tr><td style="width: 25%;"><a href="uryWigginsHochbergTest.html">uryWigginsHochbergTest.default</a></td>
+<td>Ury, Wiggins, Hochberg Test</td></tr>
+<tr><td style="width: 25%;"><a href="uryWigginsHochbergTest.html">uryWigginsHochbergTest.formula</a></td>
+<td>Ury, Wiggins, Hochberg Test</td></tr>
+</table>
+
+<h2><a id="V">-- V --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="vanWaerdenAllPairsTest.html">vanWaerdenAllPairsTest</a></td>
+<td>van-der-Waerden's All-Pairs Comparison Normal Scores Test</td></tr>
+<tr><td style="width: 25%;"><a href="vanWaerdenAllPairsTest.html">vanWaerdenAllPairsTest.default</a></td>
+<td>van-der-Waerden's All-Pairs Comparison Normal Scores Test</td></tr>
+<tr><td style="width: 25%;"><a href="vanWaerdenAllPairsTest.html">vanWaerdenAllPairsTest.formula</a></td>
+<td>van-der-Waerden's All-Pairs Comparison Normal Scores Test</td></tr>
+<tr><td style="width: 25%;"><a href="vanWaerdenManyOneTest.html">vanWaerdenManyOneTest</a></td>
+<td>van-der-Waerden's Many-One Comparisons Normal Scores Test</td></tr>
+<tr><td style="width: 25%;"><a href="vanWaerdenManyOneTest.html">vanWaerdenManyOneTest.default</a></td>
+<td>van-der-Waerden's Many-One Comparisons Normal Scores Test</td></tr>
+<tr><td style="width: 25%;"><a href="vanWaerdenManyOneTest.html">vanWaerdenManyOneTest.formula</a></td>
+<td>van-der-Waerden's Many-One Comparisons Normal Scores Test</td></tr>
+<tr><td style="width: 25%;"><a href="vanWaerdenTest.html">vanWaerdenTest</a></td>
+<td>van der Waerden's Normal Scores Test</td></tr>
+<tr><td style="width: 25%;"><a href="vanWaerdenTest.html">vanWaerdenTest.default</a></td>
+<td>van der Waerden's Normal Scores Test</td></tr>
+<tr><td style="width: 25%;"><a href="vanWaerdenTest.html">vanWaerdenTest.formula</a></td>
+<td>van der Waerden's Normal Scores Test</td></tr>
+<tr><td style="width: 25%;"><a href="vanWaerdenTest.html">vanWeardenTest.default</a></td>
+<td>van der Waerden's Normal Scores Test</td></tr>
+</table>
+
+<h2><a id="W">-- W --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="welchManyOneTTest.html">welchManyOneTTest</a></td>
+<td>Welchs's Many-To-One Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="welchManyOneTTest.html">welchManyOneTTest.aov</a></td>
+<td>Welchs's Many-To-One Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="welchManyOneTTest.html">welchManyOneTTest.default</a></td>
+<td>Welchs's Many-To-One Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="welchManyOneTTest.html">welchManyOneTTest.formula</a></td>
+<td>Welchs's Many-To-One Comparison Test</td></tr>
+<tr><td style="width: 25%;"><a href="williamsTest.html">williamsTest</a></td>
+<td>Williams Trend Test</td></tr>
+<tr><td style="width: 25%;"><a href="williamsTest.html">williamsTest.aov</a></td>
+<td>Williams Trend Test</td></tr>
+<tr><td style="width: 25%;"><a href="williamsTest.html">williamsTest.default</a></td>
+<td>Williams Trend Test</td></tr>
+<tr><td style="width: 25%;"><a href="williamsTest.html">williamsTest.formula</a></td>
+<td>Williams Trend Test</td></tr>
+</table>
+</div></body></html>

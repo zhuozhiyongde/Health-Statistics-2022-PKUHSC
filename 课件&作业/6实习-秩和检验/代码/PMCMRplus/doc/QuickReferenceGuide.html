@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<meta name="author" content="Thorsten Pohlert" />
+
+<meta name="date" content="2022-08-17" />
+
+<title>PMCMR Quick Reference Guide</title>
+
+<script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
+// be compatible with the behavior of Pandoc < 2.8).
+document.addEventListener('DOMContentLoaded', function(e) {
+  var hs = document.querySelectorAll("div.section[class*='level'] > :first-child");
+  var i, h, a;
+  for (i = 0; i < hs.length; i++) {
+    h = hs[i];
+    if (!/^h[1-6]$/i.test(h.tagName)) continue;  // it should be a header h1-h6
+    a = h.attributes;
+    while (a.length > 0) h.removeAttribute(a[0].name);
+  }
+});
+</script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+
+
+
+
+
+<style type="text/css">body {
+background-color: #fff;
+margin: 1em auto;
+max-width: 700px;
+overflow: visible;
+padding-left: 2em;
+padding-right: 2em;
+font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 14px;
+line-height: 1.35;
+}
+#TOC {
+clear: both;
+margin: 0 0 10px 10px;
+padding: 4px;
+width: 400px;
+border: 1px solid #CCCCCC;
+border-radius: 5px;
+background-color: #f6f6f6;
+font-size: 13px;
+line-height: 1.3;
+}
+#TOC .toctitle {
+font-weight: bold;
+font-size: 15px;
+margin-left: 5px;
+}
+#TOC ul {
+padding-left: 40px;
+margin-left: -1.5em;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+#TOC ul ul {
+margin-left: -2em;
+}
+#TOC li {
+line-height: 16px;
+}
+table {
+margin: 1em auto;
+border-width: 1px;
+border-color: #DDDDDD;
+border-style: outset;
+border-collapse: collapse;
+}
+table th {
+border-width: 2px;
+padding: 5px;
+border-style: inset;
+}
+table td {
+border-width: 1px;
+border-style: inset;
+line-height: 18px;
+padding: 5px 5px;
+}
+table, table th, table td {
+border-left-style: none;
+border-right-style: none;
+}
+table thead, table tr.even {
+background-color: #f7f7f7;
+}
+p {
+margin: 0.5em 0;
+}
+blockquote {
+background-color: #f6f6f6;
+padding: 0.25em 0.75em;
+}
+hr {
+border-style: solid;
+border: none;
+border-top: 1px solid #777;
+margin: 28px 0;
+}
+dl {
+margin-left: 0;
+}
+dl dd {
+margin-bottom: 13px;
+margin-left: 13px;
+}
+dl dt {
+font-weight: bold;
+}
+ul {
+margin-top: 0;
+}
+ul li {
+list-style: circle outside;
+}
+ul ul {
+margin-bottom: 0;
+}
+pre, code {
+background-color: #f7f7f7;
+border-radius: 3px;
+color: #333;
+white-space: pre-wrap; 
+}
+pre {
+border-radius: 3px;
+margin: 5px 0px 10px 0px;
+padding: 10px;
+}
+pre:not([class]) {
+background-color: #f7f7f7;
+}
+code {
+font-family: Consolas, Monaco, 'Courier New', monospace;
+font-size: 85%;
+}
+p > code, li > code {
+padding: 2px 0px;
+}
+div.figure {
+text-align: center;
+}
+img {
+background-color: #FFFFFF;
+padding: 2px;
+border: 1px solid #DDDDDD;
+border-radius: 3px;
+border: 1px solid #CCCCCC;
+margin: 0 5px;
+}
+h1 {
+margin-top: 0;
+font-size: 35px;
+line-height: 40px;
+}
+h2 {
+border-bottom: 4px solid #f7f7f7;
+padding-top: 10px;
+padding-bottom: 2px;
+font-size: 145%;
+}
+h3 {
+border-bottom: 2px solid #f7f7f7;
+padding-top: 10px;
+font-size: 120%;
+}
+h4 {
+border-bottom: 1px solid #f7f7f7;
+margin-left: 8px;
+font-size: 105%;
+}
+h5, h6 {
+border-bottom: 1px solid #ccc;
+font-size: 105%;
+}
+a {
+color: #0033dd;
+text-decoration: none;
+}
+a:hover {
+color: #6666ff; }
+a:visited {
+color: #800080; }
+a:visited:hover {
+color: #BB00BB; }
+a[href^="http:"] {
+text-decoration: underline; }
+a[href^="https:"] {
+text-decoration: underline; }
+
+code > span.kw { color: #555; font-weight: bold; } 
+code > span.dt { color: #902000; } 
+code > span.dv { color: #40a070; } 
+code > span.bn { color: #d14; } 
+code > span.fl { color: #d14; } 
+code > span.ch { color: #d14; } 
+code > span.st { color: #d14; } 
+code > span.co { color: #888888; font-style: italic; } 
+code > span.ot { color: #007020; } 
+code > span.al { color: #ff0000; font-weight: bold; } 
+code > span.fu { color: #900; font-weight: bold; } 
+code > span.er { color: #a61717; background-color: #e3d2d2; } 
+</style>
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+<h1 class="title toc-ignore">PMCMR Quick Reference Guide</h1>
+<h4 class="author">Thorsten Pohlert</h4>
+<h4 class="date">2022-08-17</h4>
+
+
+
+<div id="introduction" class="section level2">
+<h2>Introduction</h2>
+<p>In PMCMRplus function names have changed from
+<code>period.separated</code> in PMCMR (&lt;= 4.1) to
+<code>lowerCamelCase</code>.</p>
+</div>
+<div id="one-factorial-layout" class="section level2">
+<h2>One factorial layout</h2>
+<div id="omnibus-tests" class="section level3">
+<h3>Omnibus tests</h3>
+<table>
+<colgroup>
+<col width="24%" />
+<col width="24%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>FN in PMCMRplus</th>
+<th>PMCMR v4.1</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>kruskalTest</code></td>
+<td>–</td>
+<td>Kruskal-Wallis test</td>
+</tr>
+<tr class="even">
+<td><code>vanWaerdenTest</code></td>
+<td><code>vanWaerden.Test</code></td>
+<td>van der Waerden’s normal scores test</td>
+</tr>
+<tr class="odd">
+<td><code>adKSampleTest</code></td>
+<td>–</td>
+<td>Anderson-Darling k-Sample Test</td>
+</tr>
+<tr class="even">
+<td><code>bwsKSampleTest</code></td>
+<td>–</td>
+<td>Murakami k-Sample BWS normal Test</td>
+</tr>
+<tr class="odd">
+<td><code>normalScoresTest</code></td>
+<td>–</td>
+<td>Lu-Smith Normal Score Test</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="many-to-one-comparisons" class="section level3">
+<h3>Many-to-One comparisons</h3>
+<table>
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="58%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>FN in PMCMRplus</th>
+<th>PMCMR v4.1</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>dunnettTest</code></td>
+<td>–</td>
+<td>Dunnett’s test for multiple comparisons with one control</td>
+</tr>
+<tr class="even">
+<td><code>ManyOneUTest</code></td>
+<td>–</td>
+<td>Multiple comparisons with one control (multiple U-test)</td>
+</tr>
+<tr class="odd">
+<td><code>kwManyOneConoverTest</code></td>
+<td>–</td>
+<td>Pairwise Test for Multiple Comparisons of Mean Rank Sums with one
+control (Conover’s-Test)</td>
+</tr>
+<tr class="even">
+<td><code>kwManyOneDunnTest</code></td>
+<td><code>dunn.test.control</code></td>
+<td>Pairwise Test for Multiple Comparisons of Mean Rank Sums with one
+control (Dunn’s-Test)</td>
+</tr>
+<tr class="odd">
+<td><code>kwManyOneNdwTest</code></td>
+<td>–</td>
+<td>Pairwise Test for Multiple Comparisons of Mean Rank Sums with one
+control (Nemenyi-Damico-Wolfe Test)</td>
+</tr>
+<tr class="even">
+<td><code>tamhaneDunnettTest</code></td>
+<td>–</td>
+<td>Tamhane-Dunnett’s test for multiple comparisons with one
+control</td>
+</tr>
+<tr class="odd">
+<td><code>vanWaerdenManyOneTest</code></td>
+<td>–</td>
+<td>Multiple Comparisons of normal scores (van der Waerden test)</td>
+</tr>
+<tr class="even">
+<td><code>adManyOneTest</code></td>
+<td>–</td>
+<td>Anderson-Darling Many-To-One Comparison Test</td>
+</tr>
+<tr class="odd">
+<td><code>bwsManyOneTest</code></td>
+<td>–</td>
+<td>BWS Many-To-One Comparison Test</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="trend-tests" class="section level3">
+<h3>Trend tests</h3>
+<table>
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="58%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>FN in PMCMRplus</th>
+<th>PMCMR v4.1</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>cuzickTest</code></td>
+<td>–</td>
+<td>Cuzick test for testing independent samples against ordered
+alternatives</td>
+</tr>
+<tr class="even">
+<td><code>johnsonTest</code></td>
+<td>–</td>
+<td>Johnson-Mehrotra test for testing independent samples against
+ordered alternatives</td>
+</tr>
+<tr class="odd">
+<td><code>jonckheereTest</code></td>
+<td><code>jonckheere.test</code></td>
+<td>Jonckheere-Terpstra test for testing k independent samples against
+ordered alternatives</td>
+</tr>
+<tr class="even">
+<td><code>leTest</code></td>
+<td>–</td>
+<td>Le’s test for testing k independent samples against ordered
+alternatives</td>
+</tr>
+<tr class="odd">
+<td><code>spearmanTest</code></td>
+<td>–</td>
+<td>Spearman test for testing k independent samples against ordered
+alternatives</td>
+</tr>
+<tr class="even">
+<td><code>bwsTrendTest</code></td>
+<td>–</td>
+<td>Murakami’s BWS Trend Test</td>
+</tr>
+<tr class="odd">
+<td><code>chackoTest</code></td>
+<td>–</td>
+<td>Chacko’s Test</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="all-pairs-comparisons" class="section level3">
+<h3>All-pairs comparisons</h3>
+<table>
+<colgroup>
+<col width="21%" />
+<col width="27%" />
+<col width="51%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>FN in PMCMRplus</th>
+<th>PMCMR v4.1</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>dscfAllPairsTest</code></td>
+<td>–</td>
+<td>Multiple Comparisons after Dwass, Steele, Critchlow and Fligner</td>
+</tr>
+<tr class="even">
+<td><code>dunnettT3Test</code></td>
+<td>–</td>
+<td>Dunnett’s T3 test for multiple comparisons with unequal
+variances</td>
+</tr>
+<tr class="odd">
+<td><code>gamesHowellTest</code></td>
+<td>–</td>
+<td>Games-Howel test for multiple comparisons with unequal
+variances</td>
+</tr>
+<tr class="even">
+<td><code>kwAllPairsConoverTest</code></td>
+<td><code>posthoc.kruskal.conover.test</code></td>
+<td>Multiple Comparisons of Mean Rank Sums (Conover’s-Test)</td>
+</tr>
+<tr class="odd">
+<td><code>kwAllPairsDunnTest</code></td>
+<td><code>posthoc.kruskal.dunn.test</code></td>
+<td>Pairwise Test for Multiple Comparisons of Mean Rank Sums
+(Dunn’s-Test)</td>
+</tr>
+<tr class="even">
+<td><code>kwAllPairsNemenyiTest</code></td>
+<td><code>posthoc.kruskal.nemenyi.test</code></td>
+<td>Pairwise Test for Multiple Comparisons of Mean Rank Sums
+(Nemenyi-Tests)</td>
+</tr>
+<tr class="odd">
+<td><code>lsdTest</code></td>
+<td>–</td>
+<td>Least significant difference test for multiple comparisons</td>
+</tr>
+<tr class="even">
+<td><code>scheffeTest</code></td>
+<td>–</td>
+<td>Scheffe’s test for multiple comparisons</td>
+</tr>
+<tr class="odd">
+<td><code>tamhaneT2Test</code></td>
+<td>–</td>
+<td>Tamhane’s T2 test for multiple comparisons with unequal
+variances</td>
+</tr>
+<tr class="even">
+<td><code>tukeyTest</code></td>
+<td>–</td>
+<td>Tukey’s test for multiple comparisons</td>
+</tr>
+<tr class="odd">
+<td><code>uryWigginsHochbergTest</code></td>
+<td>–</td>
+<td>Ury, Wiggins, Hochberg test for multiple comparisons with unequal
+variances</td>
+</tr>
+<tr class="even">
+<td><code>vanWaerdenAllPairsTest</code></td>
+<td><code>posthoc.vanWaerden.test</code></td>
+<td>Multiple Comparisons of normal scores (van der Waerden test)</td>
+</tr>
+<tr class="odd">
+<td><code>adAllPairsTest</code></td>
+<td>–</td>
+<td>Anderson-Darling All-Pairs Comparison Test</td>
+</tr>
+<tr class="even">
+<td><code>bwsAllPairsTest</code></td>
+<td>–</td>
+<td>BWS All-Pairs Comparison Test</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="two-factorial-layout" class="section level2">
+<h2>Two factorial layout</h2>
+<div id="omnibus-tests-1" class="section level3">
+<h3>Omnibus tests</h3>
+<table>
+<colgroup>
+<col width="23%" />
+<col width="25%" />
+<col width="51%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>FN in PMCMRplus</th>
+<th>PMCMR v4.1</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>durbinTest</code></td>
+<td><code>durbin.test</code></td>
+<td>Durbin’s test for two-way balanced incomplete block design</td>
+</tr>
+<tr class="even">
+<td><code>friedmanTest</code></td>
+<td>–</td>
+<td>Friedman Test</td>
+</tr>
+<tr class="odd">
+<td><code>skillingsMackTest</code></td>
+<td>–</td>
+<td>Skillings-Mack Test</td>
+</tr>
+<tr class="even">
+<td><code>GoreTest</code></td>
+<td>–</td>
+<td>Gore Test</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="many-to-one-comparisons-1" class="section level3">
+<h3>Many-to-One comparisons</h3>
+<table>
+<colgroup>
+<col width="33%" />
+<col width="11%" />
+<col width="55%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>FN in PMCMRplus</th>
+<th>PMCMR v4.1</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>frdManyOneDemsarTest</code></td>
+<td>–</td>
+<td>Multiple Comparisons of Mean Rank Sums with a Control for
+Unreplicated Blocked Data (Demsar-Test)</td>
+</tr>
+<tr class="even">
+<td><code>frdManyOneExactTest</code></td>
+<td>–</td>
+<td>Multiple Comparisons of Mean Rank Sums with a control for
+Unreplicated Blocked Data (Exact-Test)</td>
+</tr>
+<tr class="odd">
+<td><code>frdManyOneNemenyiTest</code></td>
+<td>–</td>
+<td>Multiple Comparisons of Mean Rank Sums with a Control for
+Unreplicated Blocked Data (Nemenyi-Test)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="trend-test" class="section level3">
+<h3>Trend test</h3>
+<table>
+<thead>
+<tr class="header">
+<th>FN in PMCMRplus</th>
+<th>PMCMR v4.1</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>pageTest</code></td>
+<td>–</td>
+<td>Page Rank Sum Test</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="all-pairs-comparisons-1" class="section level3">
+<h3>All-pairs comparisons</h3>
+<table>
+<colgroup>
+<col width="31%" />
+<col width="39%" />
+<col width="28%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>FN in PMCMRplus</th>
+<th>PMCMR v4.1</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>durbinAllPairsTest</code></td>
+<td><code>posthoc.durbin.test</code></td>
+<td>Multiple Comparisons of Mean Rank Sums (Durbin’s test)</td>
+</tr>
+<tr class="even">
+<td><code>frdAllPairsConoverTest</code></td>
+<td><code>posthoc.friedman.conover.test</code></td>
+<td>Multiple Comparisons of Rank Sums for Unreplicated Blocked Data
+(Conover-Test)</td>
+</tr>
+<tr class="odd">
+<td><code>frdAllPairsExactTest</code></td>
+<td>–</td>
+<td>Multiple Comparisons of Mean Rank Sums for Unreplicated Blocked Data
+(Exact-Test)</td>
+</tr>
+<tr class="even">
+<td><code>frdAllPairsMillerTest</code></td>
+<td>–</td>
+<td>Multiple Comparisons of Mean Rank Sums for Unreplicated Blocked Data
+(Miller-Test)</td>
+</tr>
+<tr class="odd">
+<td><code>frdAllPairsNemenyiTest</code></td>
+<td><code>posthoc.friedman.nemenyi.test</code></td>
+<td>Multiple Comparisons of Mean Rank Sums for Unreplicated Blocked Data
+(Nemenyi-Test)</td>
+</tr>
+<tr class="even">
+<td><code>frdAllPairsSiegelTest</code></td>
+<td>–</td>
+<td>Multiple Comparisons of Mean Rank Sums for Unreplicated Blocked Data
+(Siegel-Test)</td>
+</tr>
+<tr class="odd">
+<td><code>quadeAllPairsTest</code></td>
+<td><code>posthoc.quade.test</code></td>
+<td>Multiple Comparisons of Rank Sums for Unreplicated Blocked Data
+(Quade multiple comparison test)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
