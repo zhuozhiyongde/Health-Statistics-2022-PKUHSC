@@ -25,15 +25,15 @@ R文档查询：
 
 Before：
 
-![CleanShot 2023-01-21 at 20.44.21](./R-language.assets/CleanShot 2023-01-21 at 20.44.21.png)
+![CleanShot 2023-01-21 at 20.44.21](./R-language.assets/CleanShot2023-01-21at20.44.21.png)
 
 After：
 
-![CleanShot 2023-01-21 at 20.49.40](./R-language.assets/CleanShot 2023-01-21 at 20.49.40.png)
+![CleanShot 2023-01-21 at 20.49.40](./R-language.assets/CleanShot2023-01-21at20.49.40.png)
 
 以及最爽的 AI 提示：
 
-![CleanShot 2023-01-21 at 20.51.20](./R-language.assets/CleanShot 2023-01-21 at 20.51.20.png)
+![CleanShot 2023-01-21 at 20.51.20](./R-language.assets/CleanShot2023-01-21at20.51.20.png)
 
 #### 配置方法
 
@@ -162,7 +162,7 @@ x <- factor(
 
 除此之外，你也可以参见 [R因子-菜鸟教程](https://www.runoob.com/r/r-factor.html) 或者R文档说明。
 
-![CleanShot 2023-01-25 at 13.48.18](./R-language.assets/CleanShot 2023-01-25 at 13.48.18.png)
+![CleanShot 2023-01-25 at 13.48.18](./R-language.assets/CleanShot2023-01-25at13.48.18.png)
 
 ### 特殊变量
 
@@ -437,7 +437,7 @@ t(x) # 等价于x'，即行列互换
 
 以下就是常见的csv形式，你可以借此理解数据框的储存形式：
 
-![CleanShot 2023-01-25 at 14.43.43](./R-language.assets/CleanShot 2023-01-25 at 14.43.43.png)
+![CleanShot 2023-01-25 at 14.43.43](./R-language.assets/CleanShot2023-01-25at14.43.43.png)
 
 #### 创建数据框
 
@@ -885,7 +885,7 @@ breaks参数一般以一下两种形式给出：
 
 它可反映出一组数据中的最大值、最小值、中位数、上下四分位数，还可以通过绘制每组数据集的箱线图来比较多组数据之间的数据分布。
 
-![CleanShot 2023-01-25 at 16.31.21](./R-language.assets/CleanShot 2023-01-25 at 16.31.21-4635492.png)
+![CleanShot 2023-01-25 at 16.31.21](./R-language.assets/CleanShot2023-01-25at16.31.21-4635492.png)
 
 ![boxplot](./R-language.assets/boxplot.svg)
 
